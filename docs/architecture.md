@@ -23,3 +23,7 @@ Simulation state and targets are managed by the environment; PPO only consumes t
 Single-card and distributed training use the same PPO and action implementation.
 A saved rollout includes joint-target integrator state and robot observation history.
 No module is duplicated at the package root and inside a subdirectory.
+
+Scene assets live in resources/scene/; all 113 baseline objects live in resources/objects/.
+Relative URDF mesh references and original asset bytes are preserved. Geometry is shipped in wheels.
+SHA-256 manifests validate the scene files. Collector revision fields are provenance, not Git dependencies.

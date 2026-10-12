@@ -75,7 +75,7 @@ def _git(project_root: Path, *arguments: str) -> str:
 
 
 def repository_lineage(project_root: str | Path) -> dict[str, object]:
-    """Record the outer commit, dirty patch identity, and all gitlinks."""
+    """Record the outer commit, dirty patch identity, and runtime source identity."""
 
     root = Path(project_root).resolve()
     diff = subprocess.run(

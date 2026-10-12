@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="root">
+  <link name="link_001">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="32d6dca13f5f70c9fcc8783997f1e05702ad1c1f7ffc044ebcdc776bf629d0bb_scale_399.stl" scale="1.0000E+00 1.0000E+00 1.0000E+00" />
+      </geometry>
+      <material name="">
+        <color rgba="7.50E-01 7.50E-01 7.50E-01 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="32d6dca13f5f70c9fcc8783997f1e05702ad1c1f7ffc044ebcdc776bf629d0bb_scale_399.stl" scale="1.0000E+00 1.0000E+00 1.0000E+00" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

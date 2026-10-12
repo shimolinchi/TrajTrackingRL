@@ -15,14 +15,15 @@ The tested runtime uses Torch 2.7.0 + CUDA 12.8. Install Isaac through its own d
 this package does not install or replace Isaac.
 
 ```bash
-git clone --recurse-submodules git@github.com:shimolinchi/TrajTrackingRL.git
+git clone https://github.com/shimolinchi/TrajTrackingRL.git
 cd TrajTrackingRL
 python -m pip install -e '.[browser,wandb,test]'
 python -m playwright install chromium
 cp configs/local.env.example configs/local.env
 ```
 
-The two pinned upstream repositories and robot/object assets require separate access.
+Robot, table, ground and all 113 baseline object assets are bundled in this repository.
+No submodule, private repository or repository access grant is required. Trajectory datasets remain external.
 If the URDF importer stalls fetching its SDK dependency, run `bash scripts/setup_isaac_extensions.sh`
 and set `TRAJTRACKING_ISAAC_EXTENSION_ROOT` as printed; see [provenance](docs/provenance.md).
 FFmpeg and ffprobe must be on PATH for browser recording. Fill the paths in `configs/local.env`.

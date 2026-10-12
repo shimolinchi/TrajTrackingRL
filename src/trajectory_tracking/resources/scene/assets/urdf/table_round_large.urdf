@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="table_round_large">
+  <link name="table_round_large">
+    <visual>
+      <material name="wood">
+        <color rgba="0.82 0.56 0.35 1.0"/>
+      </material>
+      <!-- Diameter matches the 1.4 m long side of table_narrow_large. -->
+      <!-- Keep the 30 cm thickness so the tabletop remains at +0.15 m. -->
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.7" length="0.3"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.7" length="0.3"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="500"/>
+      <friction value="1.0"/>
+      <inertia ixx="1000.0" ixy="0.0" ixz="0.0" iyy="1000.0" iyz="0.0" izz="1000.0"/>
+    </inertial>
+  </link>
+</robot>

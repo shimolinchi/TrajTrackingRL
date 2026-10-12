@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot name="cube_0p06m">
+  <link name="cube">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <!-- Uniform cube: density=800 kg/m^3, side=0.06 m. -->
+      <mass value="0.1728"/>
+      <!-- I = m * a^2 / 6 = 1.0368e-4 kg*m^2 on each principal axis. -->
+      <inertia ixx="1.0368e-4" ixy="0" ixz="0" iyy="1.0368e-4" iyz="0" izz="1.0368e-4"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.06 0.06 0.06"/></geometry>
+      <material name="cube_green"><color rgba="0.10 0.65 0.30 1.0"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.06 0.06 0.06"/></geometry>
+    </collision>
+  </link>
+</robot>

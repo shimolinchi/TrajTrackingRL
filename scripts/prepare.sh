@@ -14,6 +14,7 @@ export TMPDIR="$root/tmp" TMP="$root/tmp" TEMP="$root/tmp"
 export TRAJTRACKING_WORKSPACE="$root"
 export TORCH_DEVICE_BACKEND_AUTOLOAD=0
 if [[ -f configs/local.env ]]; then set -a; source configs/local.env; set +a; fi
+export TRAJTRACKING_OBJECT_ASSET_ROOT="${TRAJTRACKING_OBJECT_ASSET_ROOT:-$root/src/trajectory_tracking/resources/objects}"
 flags=()
 [[ "$certify" == false ]] || flags+=(--certify --physical-gpu "$physical_gpu")
 exec "$python_bin" -m trajectory_tracking.cli.prepare \

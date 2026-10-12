@@ -60,7 +60,7 @@ data:
   expected_episode_uid: 520ba7e0554c97cbd4595a457ac3bc6306b3b7a188c8a78b7ca3a65cf38dadbe
   dataset_root_env: TRAJTRACKING_DATASET_ROOT
   adapter: tro_success_continuous
-  upstream_root: submodules/Interprior_train
+  upstream_root: .
   expected_revision: 8515739c561e1db4ba6dbd9088091348c76f4281
   selection_count: 3005
   selection_index: 0

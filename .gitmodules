@@ -1,6 +1,0 @@
-[submodule "Interprior"]
-    path = submodules/Interprior
-    url = https://github.com/houyiwen/Interprior.git
-[submodule "Interprior_train"]
-    path = submodules/Interprior_train
-    url = https://github.com/Jiawe1Zhang/Interprior_train.git

@@ -25,7 +25,7 @@ class TrajectoryTrackingSceneTest(unittest.TestCase):
     def test_default_parallel_environment_spacing_is_one_point_five_metres(self) -> None:
         self.assertEqual(DEFAULT_ENV_SPACING_M, 1.5)
 
-    def test_current_gitlink_and_scene_assets_resolve(self) -> None:
+    def test_bundled_scene_assets_resolve(self) -> None:
         if not os.environ.get("TRAJTRACKING_SCENE_ASSET_ROOT"):
             self.skipTest("real scene assets are separately configured; native acceptance validates them")
         source = resolve_trajectory_scene_source(

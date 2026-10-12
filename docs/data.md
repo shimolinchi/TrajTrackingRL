@@ -17,5 +17,7 @@ A changed source or physics implementation requires new evidence. Signed histori
 
 Provide the generated recipe and contract to `scripts/train.sh`.
 For the original prepared 3005 baseline, use its original frozen selection and numeric cache files,
-with the checksum declared by the recipe. Dataset and asset roots are configured through `configs/local.env`.
+with the checksum declared by the recipe. The raw dataset is configured through `configs/local.env`. Baseline geometry is bundled by default.
+The bundled object catalog maps historical producer URIs to local files by object UID and both geometry hashes;
+old absolute producer paths do not need to exist. Other datasets may override the object asset root.
 The baseline recipe's relative selection location is shown directly in its data section.

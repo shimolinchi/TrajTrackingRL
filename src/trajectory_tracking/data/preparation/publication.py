@@ -14,7 +14,7 @@ from trajectory_tracking.data import tro_success_continuous, tro_published_conti
 from trajectory_tracking.data.tro_object_replay import digest
 from trajectory_tracking.environment.scene_config import TRAJECTORY_ISAAC_SCENE
 from trajectory_tracking.data.preparation.cache import ARRAYS, selected_metadata, save_window, write_once
-ROOT = Path(os.environ.get("TRAJTRACKING_WORKSPACE", Path.cwd())).resolve()
+from trajectory_tracking.workspace import ROOT, SCENE_ASSETS
 from trajectory_tracking.data.preparation.split import grouped_partition
 
 
@@ -39,7 +39,7 @@ def prepare_shard(dataset, output, name, rows, objects, data_range="producer_suc
     # Read a bounded shard once, not the same compressed chunks for every row.
     data = {k: z[k] for k in ARRAYS}
     valid = np.asarray(z["valid_frames"][:])
-    urdf = ROOT / "submodules/Interprior" / TRAJECTORY_ISAAC_SCENE.robot.relative_path
+    urdf = SCENE_ASSETS / TRAJECTORY_ISAAC_SCENE.robot.relative_path
     if digest(urdf) != TRAJECTORY_ISAAC_SCENE.robot.sha256:
         raise ValueError("canonical robot asset checksum mismatch")
     limits = {j.attrib["name"]: (float(j.find("limit").attrib["lower"]), float(j.find("limit").attrib["upper"]))
@@ -126,6 +126,24 @@ def validate_input(dataset):
         raise ValueError("原始轨迹索引记录数与commit不符")
 
 
+def catalog_asset_path(asset_root, uid, spec, kind, catalog_asset_root=None):
+    """Relocate a producer URI through the bundled catalog without trusting basenames."""
+    from trajectory_tracking.data.tro_object_replay import child
+    catalog_path = asset_root / "catalog.json"
+    bundled = json.loads(catalog_path.read_text()).get(uid) if catalog_path.is_file() else None
+    if bundled is not None:
+        if any(bundled[key + "_sha256"] != spec[key + "_sha256"] for key in ("urdf", "mesh")):
+            raise ValueError("bundled object catalog differs from source geometry")
+        relative = Path(bundled[kind + "_relative"])
+    else:
+        original = Path(spec[kind + "_uri"])
+        relative = original.relative_to(catalog_asset_root or asset_root) if original.is_absolute() else original
+    path = child(asset_root, relative)
+    if digest(path) != spec[kind + "_sha256"]:
+        raise ValueError("source object geometry changed")
+    return path
+
+
 def prepare(dataset, asset_root, output, workers=4, *, seed=42, test_fraction=.2, invalid="error", catalog_asset_root=None, data_range="producer_success"):
     adapter, candidate = selected_adapter(data_range)
     import pyarrow.parquet as pq
@@ -182,12 +200,7 @@ def prepare(dataset, asset_root, output, workers=4, *, seed=42, test_fraction=.2
         s = catalog[uid]
         paths = {}
         for kind in ("urdf", "mesh"):
-            original = Path(s[kind + "_uri"])
-            relative = original.relative_to(catalog_asset_root or asset_root) if original.is_absolute() else original
-            from trajectory_tracking.data.tro_object_replay import child
-            paths[kind] = child(asset_root, relative)
-            if digest(paths[kind]) != s[kind + "_sha256"]:
-                raise ValueError("source object geometry changed")
+            paths[kind] = catalog_asset_path(asset_root, uid, s, kind, catalog_asset_root)
         if s["collider_type"] != "convex_hull":
             raise ValueError("unsupported V10 collider_type")
         objects[uid] = dict(object_uid=uid, object_id=s["object_id"],

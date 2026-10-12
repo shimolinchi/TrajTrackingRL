@@ -10,7 +10,7 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cpu
       - run: python -m pip install '.[test]'
-      - run: python -m pytest --ignore=tests/test_trajectory_tracking_scene.py --ignore=tests/test_trajectory_tracking_viewer.py
+      - run: python -m pytest
         env:
           TORCH_DEVICE_BACKEND_AUTOLOAD: '0'
           PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'

@@ -1,0 +1,2262 @@
+{
+  "00b38e85924809ade7f8b87dc361c76daa89807773708741ca542955d0b37515": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/ab63179d8ffb7ce0d9f554ad416ba73c519ca12bb16cb2656f4d5226c49ecc06_scale_012.stl",
+    "mesh_sha256": "c595eb9b0f121addc8f91b9784e48a142e692b483a079d29e6b45b937ad995ed",
+    "object_id": "ab63179d8ffb7ce0d9f554ad416ba73c519ca12bb16cb2656f4d5226c49ecc06_scale_012",
+    "object_uid": "00b38e85924809ade7f8b87dc361c76daa89807773708741ca542955d0b37515",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999999731779099,
+      0.11339996382594109,
+      0.12000000104308128
+    ],
+    "urdf_relative": "object_urdf/ab63179d8ffb7ce0d9f554ad416ba73c519ca12bb16cb2656f4d5226c49ecc06_scale_012.urdf",
+    "urdf_sha256": "8a8852d69308113d9c773806b55214bb3cf1c9930a35495528b87cc59a2c56de"
+  },
+  "01d00f55152ec7b3b4fb4b795fdd87ca16e29a06edb4ab370dca44f8fb1e7ef5": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/8bf022a23da392d21d359fea78adcdd99458d7b7de87af1a57503fa5a2e43bc1_scale_000.stl",
+    "mesh_sha256": "d594e40a74ce33fe361c861f8daecde4b354c3ce11023d7bec4ddff9e0b94e60",
+    "object_id": "8bf022a23da392d21d359fea78adcdd99458d7b7de87af1a57503fa5a2e43bc1_scale_000",
+    "object_uid": "01d00f55152ec7b3b4fb4b795fdd87ca16e29a06edb4ab370dca44f8fb1e7ef5",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.1199883334338665,
+      0.09709075838327408,
+      0.09704811498522758
+    ],
+    "urdf_relative": "object_urdf/8bf022a23da392d21d359fea78adcdd99458d7b7de87af1a57503fa5a2e43bc1_scale_000.urdf",
+    "urdf_sha256": "d2a6ec2da4bca4b0313985fd100e8195fc04835d01267754ed8f3d8151205b22"
+  },
+  "0303d746da289cce51fd17c7c04642745cb60c7d9ef8daaeec3beae6fad208ee": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/682db7311e157bb5a74753945cff12b5f6fef44020098a7e283cf6d671c8c85f_scale_718.stl",
+    "mesh_sha256": "b4eaff6afa3ec715af9dc28b20989aa3c69f9c10cd8501c189c0eb38892fcd6a",
+    "object_id": "682db7311e157bb5a74753945cff12b5f6fef44020098a7e283cf6d671c8c85f_scale_718",
+    "object_uid": "0303d746da289cce51fd17c7c04642745cb60c7d9ef8daaeec3beae6fad208ee",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06530532240867615,
+      0.06188216991722584,
+      0.10999998822808266
+    ],
+    "urdf_relative": "object_urdf/682db7311e157bb5a74753945cff12b5f6fef44020098a7e283cf6d671c8c85f_scale_718.urdf",
+    "urdf_sha256": "f108b3db1f5f5dfb5cf188f8c8544c63df03cd1d5435545c7b7d84ecb59e8d5b"
+  },
+  "05e6859c4ed199f8a799a085ce8e2e96dae838eee8973ca001e5ba2fa71969f9": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/45aee80a9e0e4ac959ff2526606956dc7ddd18466de535848d1cfd36efbe3f02_scale_000.stl",
+    "mesh_sha256": "3ce75dfcaacbcbc3828327d921ac801f2f71810a2b19cca6a58c26a31ca9e44c",
+    "object_id": "45aee80a9e0e4ac959ff2526606956dc7ddd18466de535848d1cfd36efbe3f02_scale_000",
+    "object_uid": "05e6859c4ed199f8a799a085ce8e2e96dae838eee8973ca001e5ba2fa71969f9",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06489600241184235,
+      0.06806646287441254,
+      0.11980799958109856
+    ],
+    "urdf_relative": "object_urdf/45aee80a9e0e4ac959ff2526606956dc7ddd18466de535848d1cfd36efbe3f02_scale_000.urdf",
+    "urdf_sha256": "41b5e547efa2206f50a913ab5c2e8007720c5bb3d0a8277939665978b916ed6e"
+  },
+  "0673bdb132371f1e96b86f7a9c61604149b4af2e6eca28f4090af0a6a106a9f4": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/b59e0eecdb59e397ad24d4b800ad94075076654d8a7c922ad2be3b58614c9fff_scale_185.stl",
+    "mesh_sha256": "ae92d133f7af583e996009f219514adaba3d6c7bf8f84319ed5caf54ec67a5d9",
+    "object_id": "b59e0eecdb59e397ad24d4b800ad94075076654d8a7c922ad2be3b58614c9fff_scale_185",
+    "object_uid": "0673bdb132371f1e96b86f7a9c61604149b4af2e6eca28f4090af0a6a106a9f4",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.07763100415468216,
+      0.024014343041926622,
+      0.110438771545887
+    ],
+    "urdf_relative": "object_urdf/b59e0eecdb59e397ad24d4b800ad94075076654d8a7c922ad2be3b58614c9fff_scale_185.urdf",
+    "urdf_sha256": "660af43f1c0a77ab11bf7388b320a71809464389e2c64fe8366585aa0134f0d4"
+  },
+  "08cc7992ea3af1abb16e2992345737177e15aba0c9cd650b37d7cc702bf65ee2": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/73d48d285df08035463d46fd90dd1ec18e108d7bafc7ffa9d29991e59e990f5b_scale_000.stl",
+    "mesh_sha256": "56704165485abc065d53a6d878656df09ef4a2a2236c8107c055678396be5716",
+    "object_id": "73d48d285df08035463d46fd90dd1ec18e108d7bafc7ffa9d29991e59e990f5b_scale_000",
+    "object_uid": "08cc7992ea3af1abb16e2992345737177e15aba0c9cd650b37d7cc702bf65ee2",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12000000104308128,
+      0.022499999962747097,
+      0.05999999865889549
+    ],
+    "urdf_relative": "object_urdf/73d48d285df08035463d46fd90dd1ec18e108d7bafc7ffa9d29991e59e990f5b_scale_000.urdf",
+    "urdf_sha256": "60e18ff0c4f42aad22c2464ce7049fdbe86920041e5878ddb2b7c44bc4041af2"
+  },
+  "0b7f15aa345cac74196d47e5825ec61c6f24dd2177514882ed9703caddd3e73b": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/dbc7c5ac44a97db1176823c8587a8451cdbf7861e5b15f7e1286f59020859315_scale_003.stl",
+    "mesh_sha256": "43059fd8ea1fed8c523d286180413a0831fa614bf8b457191b95dff1078b63c2",
+    "object_id": "dbc7c5ac44a97db1176823c8587a8451cdbf7861e5b15f7e1286f59020859315_scale_003",
+    "object_uid": "0b7f15aa345cac74196d47e5825ec61c6f24dd2177514882ed9703caddd3e73b",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12003880366683006,
+      0.12003880739212036,
+      0.11724719777703285
+    ],
+    "urdf_relative": "object_urdf/dbc7c5ac44a97db1176823c8587a8451cdbf7861e5b15f7e1286f59020859315_scale_003.urdf",
+    "urdf_sha256": "1b7da3533f6d608bb96bd72d86143ea180d1ccbcb5a96e4c3f4f4186f4a25c9c"
+  },
+  "11c361598e01379c77b3db79ba03bac48927cb183be947a0d80e69f484e42d5b": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/e9fd043542c88943e15bfd313674a37a8758a8c53dc59a6e621ba94087731c27_scale_000.stl",
+    "mesh_sha256": "e08d48637c12d4ea975d91a9f724e57ef84c8478f7e76ee85f168eeed5c9f9a7",
+    "object_id": "e9fd043542c88943e15bfd313674a37a8758a8c53dc59a6e621ba94087731c27_scale_000",
+    "object_uid": "11c361598e01379c77b3db79ba03bac48927cb183be947a0d80e69f484e42d5b",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10000161826610565,
+      0.10000460222363472,
+      0.0696009173989296
+    ],
+    "urdf_relative": "object_urdf/e9fd043542c88943e15bfd313674a37a8758a8c53dc59a6e621ba94087731c27_scale_000.urdf",
+    "urdf_sha256": "4ad601f78475244428adcb0a86b1532e6d259b80831dc4403a4545a184c840cc"
+  },
+  "128272daa871b2ecd28cf5b806d8f19725a3d760fc0371d189808d56f84313d1": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/4ce3fbb887e4c15f58c32c5664f1e6a7a74adf8ed89647f0edcb22eab4b740fb_scale_160.stl",
+    "mesh_sha256": "aca77159ef96f6a221f0583f7c59a51d0f2e2680425b28af488169da8c2fa46f",
+    "object_id": "4ce3fbb887e4c15f58c32c5664f1e6a7a74adf8ed89647f0edcb22eab4b740fb_scale_160",
+    "object_uid": "128272daa871b2ecd28cf5b806d8f19725a3d760fc0371d189808d56f84313d1",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.01599999936297536,
+      0.12000000476837158,
+      0.05120000243186951
+    ],
+    "urdf_relative": "object_urdf/4ce3fbb887e4c15f58c32c5664f1e6a7a74adf8ed89647f0edcb22eab4b740fb_scale_160.urdf",
+    "urdf_sha256": "be5cb0cff11274345cdf8852cc67340c19fc986eb62b861d991dea1ce23192b6"
+  },
+  "12a6e402c6fc22e0fc3839404ce19af245fad677a31b1a7c4ce1380caa707ab0": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/39bd65843649ac4c3265ad689253ba26280070eb2f8de07a3c4ad9868751c408_scale_016.stl",
+    "mesh_sha256": "0b85810e4892f364b616526c555181503630477bdc1028c44ec4f496d8651280",
+    "object_id": "39bd65843649ac4c3265ad689253ba26280070eb2f8de07a3c4ad9868751c408_scale_016",
+    "object_uid": "12a6e402c6fc22e0fc3839404ce19af245fad677a31b1a7c4ce1380caa707ab0",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06009947136044502,
+      0.07735799998044968,
+      0.10877649486064911
+    ],
+    "urdf_relative": "object_urdf/39bd65843649ac4c3265ad689253ba26280070eb2f8de07a3c4ad9868751c408_scale_016.urdf",
+    "urdf_sha256": "96bac2cfe8775b91750faa5d2021e66991d8364f3905cb48f449c95d088bdf00"
+  },
+  "13ad026bcff06a7c83c009186d71012d084371a11a4d7a87faf3cb79fb23b590": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/67b0795c69b0ea04bd2b949b1212b8b2be3f6b3780439416b8a64c5619030038_scale_011.stl",
+    "mesh_sha256": "637d5922a66dea08fe7151fda17734e97f2c770ddbd5a7e01adca17b158c75c8",
+    "object_id": "67b0795c69b0ea04bd2b949b1212b8b2be3f6b3780439416b8a64c5619030038_scale_011",
+    "object_uid": "13ad026bcff06a7c83c009186d71012d084371a11a4d7a87faf3cb79fb23b590",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10999999940395355,
+      0.10999999940395355,
+      0.10999999940395355
+    ],
+    "urdf_relative": "object_urdf/67b0795c69b0ea04bd2b949b1212b8b2be3f6b3780439416b8a64c5619030038_scale_011.urdf",
+    "urdf_sha256": "6bf4f287fbe5f77f54de1e54b471a4ee7ad3290f6c0778ab29e1b58b4e15f8c7"
+  },
+  "15987d58a87ca16c2985a310c80cf1ecbbe7972a0755b3fdc5ed70388e3f31e6": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/ed5e52a2233426999f30446c2a71effb2e12dcb4dd4caf6a44c8def0028159aa_scale_000.stl",
+    "mesh_sha256": "a87324c16b9698d1c2c15186b930cb3d7b836e93b37953ce038732ccc14528d6",
+    "object_id": "ed5e52a2233426999f30446c2a71effb2e12dcb4dd4caf6a44c8def0028159aa_scale_000",
+    "object_uid": "15987d58a87ca16c2985a310c80cf1ecbbe7972a0755b3fdc5ed70388e3f31e6",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.056172797456383705,
+      0.11004000157117844,
+      0.05616941303014755
+    ],
+    "urdf_relative": "object_urdf/ed5e52a2233426999f30446c2a71effb2e12dcb4dd4caf6a44c8def0028159aa_scale_000.urdf",
+    "urdf_sha256": "524d849ad3fbe48f91832edc963adeae0fcb2bd76892a270c06a821e718446e7"
+  },
+  "186c0f8a11017d75e1b602768b4ae09c0beb246aaa6ea951d7ce42f7cb4238de": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/d6113e304b3de99bed169ef7a452c9ab12d592d1592c01af36a8972609a99907_scale_011.stl",
+    "mesh_sha256": "637d5922a66dea08fe7151fda17734e97f2c770ddbd5a7e01adca17b158c75c8",
+    "object_id": "d6113e304b3de99bed169ef7a452c9ab12d592d1592c01af36a8972609a99907_scale_011",
+    "object_uid": "186c0f8a11017d75e1b602768b4ae09c0beb246aaa6ea951d7ce42f7cb4238de",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10999999940395355,
+      0.10999999940395355,
+      0.10999999940395355
+    ],
+    "urdf_relative": "object_urdf/d6113e304b3de99bed169ef7a452c9ab12d592d1592c01af36a8972609a99907_scale_011.urdf",
+    "urdf_sha256": "6a7f76047feab602dcd174682bd386490119144dd5a99aa154b2489bd6dccd14"
+  },
+  "1da12654b595e27cc53001722c8ed7103256148d2fa9ca913b71cd0f9ffa59af": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/8d14db7ee54b6b7c282997b0104f51c9545183d616ba0007084944e81ffb4163_scale_125.stl",
+    "mesh_sha256": "cb434e7cb5d0e20c42634f93e21cb635d420b1b62d2aea64bf4e3ba074e6bf2e",
+    "object_id": "8d14db7ee54b6b7c282997b0104f51c9545183d616ba0007084944e81ffb4163_scale_125",
+    "object_uid": "1da12654b595e27cc53001722c8ed7103256148d2fa9ca913b71cd0f9ffa59af",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11996892094612122,
+      0.12000001966953278,
+      0.06668396294116974
+    ],
+    "urdf_relative": "object_urdf/8d14db7ee54b6b7c282997b0104f51c9545183d616ba0007084944e81ffb4163_scale_125.urdf",
+    "urdf_sha256": "b7f61265b73bc3d16f86824faae7f2c921417a5cf8ec1bb48253c7ecbebb3440"
+  },
+  "2158c41844681f75566071fe418ccb122a6360923f3b04c398da6faf4642bb4c": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/d85ea401f2f305a6df11b99f1c88bde6905d21b94427cfa35847d638a9d1e4d1_scale_000.stl",
+    "mesh_sha256": "350f1ead5219728b1b7686d4291fc9ffb531131a48359e313dcdf0247613a6de",
+    "object_id": "d85ea401f2f305a6df11b99f1c88bde6905d21b94427cfa35847d638a9d1e4d1_scale_000",
+    "object_uid": "2158c41844681f75566071fe418ccb122a6360923f3b04c398da6faf4642bb4c",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.05037100240588188,
+      0.028148499317467213,
+      0.12000149860978127
+    ],
+    "urdf_relative": "object_urdf/d85ea401f2f305a6df11b99f1c88bde6905d21b94427cfa35847d638a9d1e4d1_scale_000.urdf",
+    "urdf_sha256": "f6dd06dc053e4323fa45697cfbf6161dfff1d13721a30a5de90d1381f2c89b8a"
+  },
+  "2495651cd7fb1fd1e3f9048a0071dff6291b6e353d4738d6a3aa37f69a6c7c2f": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/85137c17c861c96f34258d92e578a56b533a0af7d7b509eaa063c517f7e57dcd_scale_009.stl",
+    "mesh_sha256": "6bbc5b0041a467e3d643e635a911ba6bef54c7a5867f9d619bd5bdd04ecd39a8",
+    "object_id": "85137c17c861c96f34258d92e578a56b533a0af7d7b509eaa063c517f7e57dcd_scale_009",
+    "object_uid": "2495651cd7fb1fd1e3f9048a0071dff6291b6e353d4738d6a3aa37f69a6c7c2f",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09000000357627869,
+      0.09000000357627869,
+      0.09000000357627869
+    ],
+    "urdf_relative": "object_urdf/85137c17c861c96f34258d92e578a56b533a0af7d7b509eaa063c517f7e57dcd_scale_009.urdf",
+    "urdf_sha256": "e878b64af6c30349cb204b3469cf3fdfa1bf6ee8a2406e2f3b9366e5c6b94fdf"
+  },
+  "2548bd0837779595119bc11df7ea115b827b2f2dcddb3acd6226a29787422b55": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/36c1e34048f29cbb903ca9ec69de0117ede4c1bf4d7eaf9a6ac2e6f231d2ca83_scale_7153.stl",
+    "mesh_sha256": "a3a430499686895bc097fb49724eccc7327440d65651e3eb6c9646729dea78de",
+    "object_id": "36c1e34048f29cbb903ca9ec69de0117ede4c1bf4d7eaf9a6ac2e6f231d2ca83_scale_7153",
+    "object_uid": "2548bd0837779595119bc11df7ea115b827b2f2dcddb3acd6226a29787422b55",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09985347837209702,
+      0.1000000424683094,
+      0.09714260697364807
+    ],
+    "urdf_relative": "object_urdf/36c1e34048f29cbb903ca9ec69de0117ede4c1bf4d7eaf9a6ac2e6f231d2ca83_scale_7153.urdf",
+    "urdf_sha256": "0b27cd51184d0e3c49f88c14b5c5c8da6bc496c57fe6eaf7ae3ddf4528d3d99c"
+  },
+  "2967656d763f43a1b7b2b6cbdb74392c3da2eac95676d1b5ce651360f8747869": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/81af411e9635ce542e12e30d1d3db22a34924b2434a499dd3398931bbc142bef_scale_891.stl",
+    "mesh_sha256": "17ec94929e3559f0998a7f0fe74869ef9a83bcdccf0172963713b284286924cb",
+    "object_id": "81af411e9635ce542e12e30d1d3db22a34924b2434a499dd3398931bbc142bef_scale_891",
+    "object_uid": "2967656d763f43a1b7b2b6cbdb74392c3da2eac95676d1b5ce651360f8747869",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.07849715277552605,
+      0.07819421589374542,
+      0.10999996215105057
+    ],
+    "urdf_relative": "object_urdf/81af411e9635ce542e12e30d1d3db22a34924b2434a499dd3398931bbc142bef_scale_891.urdf",
+    "urdf_sha256": "3226626f7e7a07633d9dd4110e321a4051f33c7459e813be3c04c1e6c4b3b6f9"
+  },
+  "2a1b359ac1e2a0a7a11b3f81dc78ae8832a6e679704553f14a5c89a92d232bae": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/ec2b9ef557f13fc02f951c9966be9d3084ba5094ae1da5aaca007a8ba069065d_scale_000.stl",
+    "mesh_sha256": "4ad838c8cc7271b54a1a8d465dfdb1f9bc24f225df4a09b0aa962a4b1c1b5c1d",
+    "object_id": "ec2b9ef557f13fc02f951c9966be9d3084ba5094ae1da5aaca007a8ba069065d_scale_000",
+    "object_uid": "2a1b359ac1e2a0a7a11b3f81dc78ae8832a6e679704553f14a5c89a92d232bae",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12003350630402565,
+      0.11666177958250046,
+      0.05356338806450367
+    ],
+    "urdf_relative": "object_urdf/ec2b9ef557f13fc02f951c9966be9d3084ba5094ae1da5aaca007a8ba069065d_scale_000.urdf",
+    "urdf_sha256": "d819ee5e60d9922496c8d05e8851029466c8a61d60f628c0041322acd25e5fc5"
+  },
+  "2be59ad9550ca6941495d94b4246d440462687497e65b11b3db7c24387a94961": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/feb6a9bc2727541da88bbcd08482ef4c39d8b55052286a67f463c9b370d9e8c6_scale_001.stl",
+    "mesh_sha256": "2802808c3672c543c3f53e4f0189a48ade7755ccd51b98f21d90fcb7fcc63b71",
+    "object_id": "feb6a9bc2727541da88bbcd08482ef4c39d8b55052286a67f463c9b370d9e8c6_scale_001",
+    "object_uid": "2be59ad9550ca6941495d94b4246d440462687497e65b11b3db7c24387a94961",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12015527114272118,
+      0.12015527114272118,
+      0.06823199987411499
+    ],
+    "urdf_relative": "object_urdf/feb6a9bc2727541da88bbcd08482ef4c39d8b55052286a67f463c9b370d9e8c6_scale_001.urdf",
+    "urdf_sha256": "cef7e790966341eb47c57d1f4834b405e084ad6322d520e6339dc6e40705ec76"
+  },
+  "2fa0fd82475c01e8179f50ef4739c1b20b2a4f5dc1922de76da4b8babb9f15a5": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/3f8fc4956874975af6e789029334020bed93b5294a99067c82c7858dcc6a5b15_scale_000.stl",
+    "mesh_sha256": "56623f0063f2dbeea6c6f830aed236963a70eaeb7547bd9b72a89a611fded6a6",
+    "object_id": "3f8fc4956874975af6e789029334020bed93b5294a99067c82c7858dcc6a5b15_scale_000",
+    "object_uid": "2fa0fd82475c01e8179f50ef4739c1b20b2a4f5dc1922de76da4b8babb9f15a5",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999640613794327,
+      0.06368040293455124,
+      0.10180199891328812
+    ],
+    "urdf_relative": "object_urdf/3f8fc4956874975af6e789029334020bed93b5294a99067c82c7858dcc6a5b15_scale_000.urdf",
+    "urdf_sha256": "9675cbbfab308369d4f4132db20ca0509c098997630a778d360120e66e452b82"
+  },
+  "310f5cc6ad59a6bad8e51463a0c7f6e630e75087411dffbc1388bb95ce72ea1d": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/ffd323b4f300df9a2b0a84e75edeceed9dedc352626dfead224b9e7eed450acb_scale_007.stl",
+    "mesh_sha256": "e7905d885657cf95655df9c5f5cdae147e3a31988eedffbfb4aac8c84b893600",
+    "object_id": "ffd323b4f300df9a2b0a84e75edeceed9dedc352626dfead224b9e7eed450acb_scale_007",
+    "object_uid": "310f5cc6ad59a6bad8e51463a0c7f6e630e75087411dffbc1388bb95ce72ea1d",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.034407999366521835,
+      0.11010546237230301,
+      0.11010546237230301
+    ],
+    "urdf_relative": "object_urdf/ffd323b4f300df9a2b0a84e75edeceed9dedc352626dfead224b9e7eed450acb_scale_007.urdf",
+    "urdf_sha256": "4d3fc1ea9e5ca8f670193bf5f241b08ee790a8eb619ea6561ad5b975092fb7cf"
+  },
+  "321ca647ee20db04039083b9a684c7cbca1637a8b5c5fea7634a94bb6c460d1e": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/bafd71715b6cf8ce42083fcca30ab76f63e11d18f0e3c423f1c5172f7060e6e1_scale_011.stl",
+    "mesh_sha256": "637d5922a66dea08fe7151fda17734e97f2c770ddbd5a7e01adca17b158c75c8",
+    "object_id": "bafd71715b6cf8ce42083fcca30ab76f63e11d18f0e3c423f1c5172f7060e6e1_scale_011",
+    "object_uid": "321ca647ee20db04039083b9a684c7cbca1637a8b5c5fea7634a94bb6c460d1e",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10999999940395355,
+      0.10999999940395355,
+      0.10999999940395355
+    ],
+    "urdf_relative": "object_urdf/bafd71715b6cf8ce42083fcca30ab76f63e11d18f0e3c423f1c5172f7060e6e1_scale_011.urdf",
+    "urdf_sha256": "6ecbddaece1d6a93a061bc68a7740b09a75f425fe3720bbf295162af821d6cca"
+  },
+  "333f0dc204da3724cf2b5a914b50dcf01844a61a824052a58f4f7788fec7eb4e": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/cfc84a6de712d2f7df1e71c8a4b4e8f950432680315380b2560df47fe04357eb_scale_071.stl",
+    "mesh_sha256": "03fda1c826075f80663ceb88269a4e7dbc72ee85026706d7f524224eb7d7f5fd",
+    "object_id": "cfc84a6de712d2f7df1e71c8a4b4e8f950432680315380b2560df47fe04357eb_scale_071",
+    "object_uid": "333f0dc204da3724cf2b5a914b50dcf01844a61a824052a58f4f7788fec7eb4e",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10468586534261703,
+      0.09568556398153305,
+      0.09256526455283165
+    ],
+    "urdf_relative": "object_urdf/cfc84a6de712d2f7df1e71c8a4b4e8f950432680315380b2560df47fe04357eb_scale_071.urdf",
+    "urdf_sha256": "875b94559651271e96e3fda5c69cb01919a1934b21485c3c433b18530851fc5d"
+  },
+  "3a4b7bd42ce9300ebdfec463f65440ae2dadf8f8c5e00b243680a4c9c9a0efca": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/cc5de5fefca08809a60436cc9e43cc753d6101b80473fcc21ccc8b5dd61e6533_scale_000.stl",
+    "mesh_sha256": "e6b9560738579a3b9641af46b1a017a79dc44dbc6c551c6777f24fc0e43f8854",
+    "object_id": "cc5de5fefca08809a60436cc9e43cc753d6101b80473fcc21ccc8b5dd61e6533_scale_000",
+    "object_uid": "3a4b7bd42ce9300ebdfec463f65440ae2dadf8f8c5e00b243680a4c9c9a0efca",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09678095951676369,
+      0.12000096216797829,
+      0.11006280779838562
+    ],
+    "urdf_relative": "object_urdf/cc5de5fefca08809a60436cc9e43cc753d6101b80473fcc21ccc8b5dd61e6533_scale_000.urdf",
+    "urdf_sha256": "c592232fb9c26189e41b5d590b124ba1672e6a184c5462e46e9c20062b8edf49"
+  },
+  "3b5c956e09424b90753bfd14c224852ba8ca1c61503498d7ccab0ed3d52b1899": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/0f9ed2cc4baaf91a55fde1a9f51fe1a8d828dcf399aa1eca1d1d85d4a4e0d2ed_scale_024.stl",
+    "mesh_sha256": "90b7b15eb5c9fe03fac65cd6980d0a8f4a66b930d05752fff55953e7cdb9c147",
+    "object_id": "0f9ed2cc4baaf91a55fde1a9f51fe1a8d828dcf399aa1eca1d1d85d4a4e0d2ed_scale_024",
+    "object_uid": "3b5c956e09424b90753bfd14c224852ba8ca1c61503498d7ccab0ed3d52b1899",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08580910414457321,
+      0.09801828861236572,
+      0.03532196022570133
+    ],
+    "urdf_relative": "object_urdf/0f9ed2cc4baaf91a55fde1a9f51fe1a8d828dcf399aa1eca1d1d85d4a4e0d2ed_scale_024.urdf",
+    "urdf_sha256": "ba1404ec60818aab50d8230b84f04d0ca2fa4aeafcac78cc2da2a14a098a4669"
+  },
+  "3bb7aac3cb1861f2843b11e44266c8b82c695790f8268c74198ae2d137b2fb06": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/fc3b5141a33c16514f9e6e7badc9ff0bd1d58f6ccdb5e904c48805e59e6ce066_scale_104.stl",
+    "mesh_sha256": "769c1f5196f1bca49a23b82b487af29ec29770f9e3714cf1a8f8552e564dc009",
+    "object_id": "fc3b5141a33c16514f9e6e7badc9ff0bd1d58f6ccdb5e904c48805e59e6ce066_scale_104",
+    "object_uid": "3bb7aac3cb1861f2843b11e44266c8b82c695790f8268c74198ae2d137b2fb06",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09269270300865173,
+      0.11404326185584068,
+      0.0941283106803894
+    ],
+    "urdf_relative": "object_urdf/fc3b5141a33c16514f9e6e7badc9ff0bd1d58f6ccdb5e904c48805e59e6ce066_scale_104.urdf",
+    "urdf_sha256": "0eeb02726ba7fa9dbf8ef52c8c20862785ac8692433a449a08bbad7c88b7a297"
+  },
+  "3df6f1be6c8795e09ddd59ea919de2a51b5f05aa43c37855c45db713c2db1d9c": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/afbb07e0191d8d2e207736feb336ed586e761b7482d38a2ed6a631f6c67f117e_scale_038.stl",
+    "mesh_sha256": "d405bcf4dd760f29a824f33457cee8371bef8d57bc02cd9ab044c7b1368fb456",
+    "object_id": "afbb07e0191d8d2e207736feb336ed586e761b7482d38a2ed6a631f6c67f117e_scale_038",
+    "object_uid": "3df6f1be6c8795e09ddd59ea919de2a51b5f05aa43c37855c45db713c2db1d9c",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.029213697649538517,
+      0.08165234327316284,
+      0.0886109322309494
+    ],
+    "urdf_relative": "object_urdf/afbb07e0191d8d2e207736feb336ed586e761b7482d38a2ed6a631f6c67f117e_scale_038.urdf",
+    "urdf_sha256": "ac837a6a584294f2467e9f52c1b74c2cc8a2a82a4af8e7048ce27ff2c9bc5d35"
+  },
+  "3eb06a38942fb3ab1ae1253f46bbe7e0c2d82c9cbf8a90ff5315367e11bdec60": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/fc8ac6ef5eb0d2c78f2991f248eee9a98b6d3481e08d5fd1a35211b122728e11_scale_240.stl",
+    "mesh_sha256": "f8ca9cbdd48c9f1709711b95390faa6f0f0aa42bfa45347a187dfa846e504278",
+    "object_id": "fc8ac6ef5eb0d2c78f2991f248eee9a98b6d3481e08d5fd1a35211b122728e11_scale_240",
+    "object_uid": "3eb06a38942fb3ab1ae1253f46bbe7e0c2d82c9cbf8a90ff5315367e11bdec60",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12000000476837158,
+      0.02159999869763851,
+      0.12000000476837158
+    ],
+    "urdf_relative": "object_urdf/fc8ac6ef5eb0d2c78f2991f248eee9a98b6d3481e08d5fd1a35211b122728e11_scale_240.urdf",
+    "urdf_sha256": "b93f88b545267c690313cf7b7a1fec4312387ae8440afa4392a2cd14bfc5afc4"
+  },
+  "40359047f97b9a28d6de4ff69aca0d24127baa6ab2061ea0c904488f8db92de9": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/5575d522c61abba61d75b7c100bdb81853456b431a4d8a3fb83a7dfce6069031_scale_000.stl",
+    "mesh_sha256": "381287c7cbbde2665a36fe263e4997e3b89768aaba4f1c8755004007f0139b73",
+    "object_id": "5575d522c61abba61d75b7c100bdb81853456b431a4d8a3fb83a7dfce6069031_scale_000",
+    "object_uid": "40359047f97b9a28d6de4ff69aca0d24127baa6ab2061ea0c904488f8db92de9",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08485140278935432,
+      0.08485139906406403,
+      0.06837540119886398
+    ],
+    "urdf_relative": "object_urdf/5575d522c61abba61d75b7c100bdb81853456b431a4d8a3fb83a7dfce6069031_scale_000.urdf",
+    "urdf_sha256": "4bcbe05c26d51145afc80f6692ee76e6091523206ac41bc53b2998b16f115999"
+  },
+  "41d77fc0c86f04810999df7343b8659f124b8bbc87e9f6a32830893ee9f70723": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/4c26320e2f7a4473b0253948ed8a3928b9259a97d86015ac7bf3177288cf102d_scale_000.stl",
+    "mesh_sha256": "ac20bf5102caa1b57caf7a12a964b28b3d3b2454dcb35b0ca855b8002638fd4c",
+    "object_id": "4c26320e2f7a4473b0253948ed8a3928b9259a97d86015ac7bf3177288cf102d_scale_000",
+    "object_uid": "41d77fc0c86f04810999df7343b8659f124b8bbc87e9f6a32830893ee9f70723",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11997592821717262,
+      0.06923358887434006,
+      0.037146998569369316
+    ],
+    "urdf_relative": "object_urdf/4c26320e2f7a4473b0253948ed8a3928b9259a97d86015ac7bf3177288cf102d_scale_000.urdf",
+    "urdf_sha256": "9751d9779b57063bc6fb558caeaf33be7b4c6406d234361021170adf11537040"
+  },
+  "4315b5cbeb261b56234c65af7323eba72f1f0f3a618cb76d7f1e6bf4324f6e6c": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/26e72f3ab43633c6b7a447a62f7cec32dfaecc8af5a6a1d35cbb78ee1d7ee811_scale_000.stl",
+    "mesh_sha256": "1d4003c6432f010dd8c270d49585278d8fc66a11b342c17fd32c7bfa51103c8c",
+    "object_id": "26e72f3ab43633c6b7a447a62f7cec32dfaecc8af5a6a1d35cbb78ee1d7ee811_scale_000",
+    "object_uid": "4315b5cbeb261b56234c65af7323eba72f1f0f3a618cb76d7f1e6bf4324f6e6c",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11318669468164444,
+      0.11998555436730385,
+      0.046252138912677765
+    ],
+    "urdf_relative": "object_urdf/26e72f3ab43633c6b7a447a62f7cec32dfaecc8af5a6a1d35cbb78ee1d7ee811_scale_000.urdf",
+    "urdf_sha256": "dfb1a30538d2d3fe3c95dc7b429c11cc9fb2e2e8135a7e7e39b9290d94d59c97"
+  },
+  "45109a0d3b25e4f25fff920f77442d20b09d916d32677db1ab6548aa39785ea1": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/713821269c8b3b6d68149ca3442fcd68834fce9001b27979ad5bc9d95f33a4d4_scale_010.stl",
+    "mesh_sha256": "6456851eed279407e43c84df24c25abd4eca93d4d269e1720ff7cba11c5671a4",
+    "object_id": "713821269c8b3b6d68149ca3442fcd68834fce9001b27979ad5bc9d95f33a4d4_scale_010",
+    "object_uid": "45109a0d3b25e4f25fff920f77442d20b09d916d32677db1ab6548aa39785ea1",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612
+    ],
+    "urdf_relative": "object_urdf/713821269c8b3b6d68149ca3442fcd68834fce9001b27979ad5bc9d95f33a4d4_scale_010.urdf",
+    "urdf_sha256": "f58b5b4b19765550d5a3b9bf23b488c67c62bbcd7b9995f5719536a8abced2ab"
+  },
+  "455264cfab27d79c7a38cd475c638c0082bba53ea462aecf944e744d7a802e8e": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/9b4cdd9470fa657374607ee3302e30086dc6647b42bd6e0ead5af9200b8c8ca6_scale_063.stl",
+    "mesh_sha256": "62dd0a685e5c7198ca3b3efd1eb1d2b46d5742850a802dcc8dc141958e812e53",
+    "object_id": "9b4cdd9470fa657374607ee3302e30086dc6647b42bd6e0ead5af9200b8c8ca6_scale_063",
+    "object_uid": "455264cfab27d79c7a38cd475c638c0082bba53ea462aecf944e744d7a802e8e",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06805475801229477,
+      0.06797339022159576,
+      0.08999989181756973
+    ],
+    "urdf_relative": "object_urdf/9b4cdd9470fa657374607ee3302e30086dc6647b42bd6e0ead5af9200b8c8ca6_scale_063.urdf",
+    "urdf_sha256": "3f7fb1cc575bb662b6fcf3e8c83f8efbf5db4828cf29662137e1fb6a8e0bda9b"
+  },
+  "48b63e49900021da500f6143d4b570f1181169b5f5faca90873302ed412d842c": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/8feb44f705467ce5aa18a6fc4242f9ffa1bdc1d87286ed20ab37c9e66f4a4d1a_scale_052.stl",
+    "mesh_sha256": "b9c2010e984b91d264f874b4706b3d2da4c26578a7d598ef74f6bdb9be9d30cc",
+    "object_id": "8feb44f705467ce5aa18a6fc4242f9ffa1bdc1d87286ed20ab37c9e66f4a4d1a_scale_052",
+    "object_uid": "48b63e49900021da500f6143d4b570f1181169b5f5faca90873302ed412d842c",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11020107567310333,
+      0.11020107939839363,
+      0.06905156373977661
+    ],
+    "urdf_relative": "object_urdf/8feb44f705467ce5aa18a6fc4242f9ffa1bdc1d87286ed20ab37c9e66f4a4d1a_scale_052.urdf",
+    "urdf_sha256": "adf052b162bd5c48c15aebf36bae55836164024958a277d2e9e8f35212182ce6"
+  },
+  "48f28215d5436e2ce53fafa92dbf1c3c09d80a147a9ef7eb37201b343fe3a5d2": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/b72acc71f6d5f87dcabcb8d7465d1fcf336c352a69cf803281ce948785733ad4_scale_278.stl",
+    "mesh_sha256": "53db30da30ec637c8ed57c29b740881f4d14eff8992592f613051e3d30661299",
+    "object_id": "b72acc71f6d5f87dcabcb8d7465d1fcf336c352a69cf803281ce948785733ad4_scale_278",
+    "object_uid": "48f28215d5436e2ce53fafa92dbf1c3c09d80a147a9ef7eb37201b343fe3a5d2",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.082191102206707,
+      0.09212176874279976,
+      0.10015791654586792
+    ],
+    "urdf_relative": "object_urdf/b72acc71f6d5f87dcabcb8d7465d1fcf336c352a69cf803281ce948785733ad4_scale_278.urdf",
+    "urdf_sha256": "3a48abe2950af8c7eeacac003b5c7c6e15bf506e069032acef401459b72bd71c"
+  },
+  "4f03911f040e3414e350d4431b199ba0e9940affe2849e0ac3d4ff1cd4a77bbf": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/6c230b3affb61f6913d92dcc4f43387086cf546046a827b65b4e26af573e36d2_scale_000.stl",
+    "mesh_sha256": "af89c5b825cc7a06dacf2139a3d4df49df8c527706abf4a31d0c2754cdd58be3",
+    "object_id": "6c230b3affb61f6913d92dcc4f43387086cf546046a827b65b4e26af573e36d2_scale_000",
+    "object_uid": "4f03911f040e3414e350d4431b199ba0e9940affe2849e0ac3d4ff1cd4a77bbf",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08553599938750267,
+      0.08553600311279297,
+      0.11998800188302994
+    ],
+    "urdf_relative": "object_urdf/6c230b3affb61f6913d92dcc4f43387086cf546046a827b65b4e26af573e36d2_scale_000.urdf",
+    "urdf_sha256": "df6422cad6f21d60a44574b35daf8d6b35915fe194b9a12ae84ae3296e6ea76f"
+  },
+  "51df874fb37e7061869d6d6c2181ff780ac373a4be86584e198ffd3585a3caa2": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/9dd8a34fd9ff5546bc08773bbb8e5b7cdabf8b4912f4272ff4eebe7d5412f228_scale_036.stl",
+    "mesh_sha256": "c1d4eeba730ed1c1cd1cafd4c72d88a14f4ef9c78c536faf9649ea676ec5206d",
+    "object_id": "9dd8a34fd9ff5546bc08773bbb8e5b7cdabf8b4912f4272ff4eebe7d5412f228_scale_036",
+    "object_uid": "51df874fb37e7061869d6d6c2181ff780ac373a4be86584e198ffd3585a3caa2",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10998828709125519,
+      0.08446536213159561,
+      0.12000005692243576
+    ],
+    "urdf_relative": "object_urdf/9dd8a34fd9ff5546bc08773bbb8e5b7cdabf8b4912f4272ff4eebe7d5412f228_scale_036.urdf",
+    "urdf_sha256": "d493779c815c5f8449df7916117546a267f299e331dfe0ab49bc0c8e010300f8"
+  },
+  "5b301a79c6f978132d64ff64ff0f1069de623797a510f14ef0bafdb57888321d": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/ebf6c628b97fa1ea87793d546501f7edd7a289ec578b6eca5b6ac1a965d10698_scale_000.stl",
+    "mesh_sha256": "10790544f36e4232f1b529d29627900ba7bba80edb9b9b9ef4d89a466898c23b",
+    "object_id": "ebf6c628b97fa1ea87793d546501f7edd7a289ec578b6eca5b6ac1a965d10698_scale_000",
+    "object_uid": "5b301a79c6f978132d64ff64ff0f1069de623797a510f14ef0bafdb57888321d",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08473800122737885,
+      0.11505542695522308,
+      0.0898515023291111
+    ],
+    "urdf_relative": "object_urdf/ebf6c628b97fa1ea87793d546501f7edd7a289ec578b6eca5b6ac1a965d10698_scale_000.urdf",
+    "urdf_sha256": "77d8677dc9fa6e231f7c6469fbc4c1354859b27a8117d87ba9f5e98e5fd02495"
+  },
+  "5ba77afd19b6d31552c1beec0baf724214fd5f055c96fbd5bfa4e76723889d1d": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/cbe94b6bf4825ab21dfc90eb1a643dac46b05193ea25b1fda0fb1be07c451d16_scale_010.stl",
+    "mesh_sha256": "5a4f1dae83215b1c5b6c303e6b4217af649b1175014421b468f77eb87af4c99b",
+    "object_id": "cbe94b6bf4825ab21dfc90eb1a643dac46b05193ea25b1fda0fb1be07c451d16_scale_010",
+    "object_uid": "5ba77afd19b6d31552c1beec0baf724214fd5f055c96fbd5bfa4e76723889d1d",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11589309945702553,
+      0.12223609909415245,
+      0.06703553535044193
+    ],
+    "urdf_relative": "object_urdf/cbe94b6bf4825ab21dfc90eb1a643dac46b05193ea25b1fda0fb1be07c451d16_scale_010.urdf",
+    "urdf_sha256": "e1a5b6ec5bd2baa36a7abdba22f7d108087876301bac4bde806a1d7135e7b232"
+  },
+  "64c1964f0d296427ca560161aea0d3e7cb8c3765cec0809aba9d8e77d9feadd5": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/1171e2e770a27454cd6d1b519eb4eb84bad55f5f47ef5210407c0dcffb086134_scale_000.stl",
+    "mesh_sha256": "21ec21433e0f818cf6b0791ab81601a904c7b67b955a6f900bce5c8991f901fa",
+    "object_id": "1171e2e770a27454cd6d1b519eb4eb84bad55f5f47ef5210407c0dcffb086134_scale_000",
+    "object_uid": "64c1964f0d296427ca560161aea0d3e7cb8c3765cec0809aba9d8e77d9feadd5",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12002800032496452,
+      0.12002799659967422,
+      0.03552180342376232
+    ],
+    "urdf_relative": "object_urdf/1171e2e770a27454cd6d1b519eb4eb84bad55f5f47ef5210407c0dcffb086134_scale_000.urdf",
+    "urdf_sha256": "4ea51d56b6614eff4a68b2892642d4ddbbcb92321884ff240340ab8cae2cbcf0"
+  },
+  "6cdf132e5c787a09b9bc1fd2e584d28f548d5c3b72678f334dd11eb1550e1ef8": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/67937a8f8034ae12c53c286a205afd76150e5d95f49a4c2e2dd1bf73be41a886_scale_485.stl",
+    "mesh_sha256": "f8550316bab5f4d286a9b9675e736728d59c290fab36279a8350343dee725288",
+    "object_id": "67937a8f8034ae12c53c286a205afd76150e5d95f49a4c2e2dd1bf73be41a886_scale_485",
+    "object_uid": "6cdf132e5c787a09b9bc1fd2e584d28f548d5c3b72678f334dd11eb1550e1ef8",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09612000361084938,
+      0.09955060482025146,
+      0.04633983597159386
+    ],
+    "urdf_relative": "object_urdf/67937a8f8034ae12c53c286a205afd76150e5d95f49a4c2e2dd1bf73be41a886_scale_485.urdf",
+    "urdf_sha256": "963aa814bcace7234d27ac09f7ac2da9d39c66a692be13561ec8f56ed283544e"
+  },
+  "725165677691d5f607e75224cce6fedadb64c33455c330bc020fac75c812964b": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/99da944a6d5b329b08f7b1e81962fe620074f341bb92a1f097d4ff2751e173da_scale_000.stl",
+    "mesh_sha256": "f889fd3b1b5520a88c55ec63f1b65d5de1f980bc440076e54ef4bec99e602f8a",
+    "object_id": "99da944a6d5b329b08f7b1e81962fe620074f341bb92a1f097d4ff2751e173da_scale_000",
+    "object_uid": "725165677691d5f607e75224cce6fedadb64c33455c330bc020fac75c812964b",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999600008130074,
+      0.07938599586486816,
+      0.012576000299304724
+    ],
+    "urdf_relative": "object_urdf/99da944a6d5b329b08f7b1e81962fe620074f341bb92a1f097d4ff2751e173da_scale_000.urdf",
+    "urdf_sha256": "bb2d15cf25ed32fbd3f20f5dbf21b4500adb2671416083ec83cf936dd2bc406d"
+  },
+  "7297f9ae2a8e9af766977d966305c63eec88321e856fecbf20fdccaf76313ad6": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/32d6dca13f5f70c9fcc8783997f1e05702ad1c1f7ffc044ebcdc776bf629d0bb_scale_399.stl",
+    "mesh_sha256": "fa5e5b4fe7f59484d3f4d54b19bb1ada148538e5db0d003cc0af087a6fe58b01",
+    "object_id": "32d6dca13f5f70c9fcc8783997f1e05702ad1c1f7ffc044ebcdc776bf629d0bb_scale_399",
+    "object_uid": "7297f9ae2a8e9af766977d966305c63eec88321e856fecbf20fdccaf76313ad6",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.0668429359793663,
+      0.12000001221895218,
+      0.06005208380520344
+    ],
+    "urdf_relative": "object_urdf/32d6dca13f5f70c9fcc8783997f1e05702ad1c1f7ffc044ebcdc776bf629d0bb_scale_399.urdf",
+    "urdf_sha256": "cee8ca949c89bc038d2694a34d1f13de3b8abd0694876e5bcc796420608de860"
+  },
+  "73cf12b4b75caaa2927f082d651c4ad0cf256af45eb13ae205e1e4a91f60210b": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/b32f43298291e693acdaa25ce89434295549ee2ecaf58bb0588f87be35079572_scale_001.stl",
+    "mesh_sha256": "c015af18d50429996152b781f66e58e202bfeae38f2432f2cba192292c22de89",
+    "object_id": "b32f43298291e693acdaa25ce89434295549ee2ecaf58bb0588f87be35079572_scale_001",
+    "object_uid": "73cf12b4b75caaa2927f082d651c4ad0cf256af45eb13ae205e1e4a91f60210b",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.1100107803940773,
+      0.12001175433397293,
+      0.12001176178455353
+    ],
+    "urdf_relative": "object_urdf/b32f43298291e693acdaa25ce89434295549ee2ecaf58bb0588f87be35079572_scale_001.urdf",
+    "urdf_sha256": "bdfdf9b2a550719a77b45f186863bca0f552971da4af601d27f4ce554c1e71d4"
+  },
+  "753ad626ede6e65b3335e561e77022e6736b4c6ad768fdaeec04eb8aa61a13e6": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/5e763b84a75751fb44412cc68d5b3635612ed0a3f34569632ef4a2bba845efb2_scale_084.stl",
+    "mesh_sha256": "b0929273562ceef822aca3ed1994c682251806bc0a628f321010c329e8e8c588",
+    "object_id": "5e763b84a75751fb44412cc68d5b3635612ed0a3f34569632ef4a2bba845efb2_scale_084",
+    "object_uid": "753ad626ede6e65b3335e561e77022e6736b4c6ad768fdaeec04eb8aa61a13e6",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10999995470046997,
+      0.10724201798439026,
+      0.07143646478652954
+    ],
+    "urdf_relative": "object_urdf/5e763b84a75751fb44412cc68d5b3635612ed0a3f34569632ef4a2bba845efb2_scale_084.urdf",
+    "urdf_sha256": "d2f0ca462b28d719e8af36fc3ad927f5018bba2d449cf51aa1d06b0f8b479cb1"
+  },
+  "7b6b98e96e7f0c4e6b7c550b6d04910bc6c457dd0bb985365d60ad45af33fd86": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/f876f3b24114fe333950e5c33700108cce84de0914a0ff7918449c16401ecf89_scale_000.stl",
+    "mesh_sha256": "fd4c7dd3045377f548ca168f44893e4a7d993f741ca6107b3d32b205172cf5b4",
+    "object_id": "f876f3b24114fe333950e5c33700108cce84de0914a0ff7918449c16401ecf89_scale_000",
+    "object_uid": "7b6b98e96e7f0c4e6b7c550b6d04910bc6c457dd0bb985365d60ad45af33fd86",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.0733260028064251,
+      0.11998074501752853,
+      0.11998800188302994
+    ],
+    "urdf_relative": "object_urdf/f876f3b24114fe333950e5c33700108cce84de0914a0ff7918449c16401ecf89_scale_000.urdf",
+    "urdf_sha256": "09317ece8e458d47709aa5bd52422f117d96e3ba22efdb74e5e7beb791a67a54"
+  },
+  "7cc5a449b0060b638043a364b55cbbef31f1a69003b6bf39a0e42d9f92c3fb70": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/100eeae5c27841cfaedd2b3a3f7eacdf1259640bfacf3d7eede2183892bc016d_scale_000.stl",
+    "mesh_sha256": "84d455444dce2bd668e4ff589cf740f8f7c42f270b0c67c7de1433a45ce5f845",
+    "object_id": "100eeae5c27841cfaedd2b3a3f7eacdf1259640bfacf3d7eede2183892bc016d_scale_000",
+    "object_uid": "7cc5a449b0060b638043a364b55cbbef31f1a69003b6bf39a0e42d9f92c3fb70",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06999999657273293,
+      0.06999999284744263,
+      0.12000000104308128
+    ],
+    "urdf_relative": "object_urdf/100eeae5c27841cfaedd2b3a3f7eacdf1259640bfacf3d7eede2183892bc016d_scale_000.urdf",
+    "urdf_sha256": "718fc5ce7dc4083e2b338ef6ecec78df6612f7b7e264669b3ec7eb8f4588bf2c"
+  },
+  "7da8f45ed580cec77ae22d03a8dae9cd1d341dd8962f58998aca640b8102e759": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/dc0e1cc6093383c83e391d4a7ab166fcb8244de46ab3336c909bdd3c5c0509a2_scale_000.stl",
+    "mesh_sha256": "f0d9d58cad84b7b2dc36b119c52a7289a9657c6c863f73d3ced96e88d9330953",
+    "object_id": "dc0e1cc6093383c83e391d4a7ab166fcb8244de46ab3336c909bdd3c5c0509a2_scale_000",
+    "object_uid": "7da8f45ed580cec77ae22d03a8dae9cd1d341dd8962f58998aca640b8102e759",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11988786235451698,
+      0.11998516693711281,
+      0.03659999929368496
+    ],
+    "urdf_relative": "object_urdf/dc0e1cc6093383c83e391d4a7ab166fcb8244de46ab3336c909bdd3c5c0509a2_scale_000.urdf",
+    "urdf_sha256": "8cc5d7f50204e3d94a99c606f5c92d7974cdf1687b4953dc2b870818fa0bf95e"
+  },
+  "7dabc2382fe8bf6b65bb7814ae3aa9538987efe5d0aba3eb2fae864fd57e7db2": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/3f989d46efecab75002a96b3d218b07a493d441307984a374a6fcfa848e1d944_scale_001.stl",
+    "mesh_sha256": "59f7983341819724170462e775317a3a310f3a0a4d28ba7a4c519b231fd5bb1c",
+    "object_id": "3f989d46efecab75002a96b3d218b07a493d441307984a374a6fcfa848e1d944_scale_001",
+    "object_uid": "7dabc2382fe8bf6b65bb7814ae3aa9538987efe5d0aba3eb2fae864fd57e7db2",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12000999972224236,
+      0.06000500172376633,
+      0.08182499930262566
+    ],
+    "urdf_relative": "object_urdf/3f989d46efecab75002a96b3d218b07a493d441307984a374a6fcfa848e1d944_scale_001.urdf",
+    "urdf_sha256": "a7cbc7d068d45c4d760fc7fd5ce0186588c958f5b2fce14f36d5718e8f20b0fe"
+  },
+  "7dca6756e079929f07664174ae13f454ef33c016580ad5b27ce8f3b5d45b693e": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/bc9252f694e5b94f90f10af18c5f3a458877c8997be0f286fe7360e026091e34_scale_000.stl",
+    "mesh_sha256": "40fbb575444a1879ee88b8554fc333c76fc4ab4d03e90296224684963edde8d5",
+    "object_id": "bc9252f694e5b94f90f10af18c5f3a458877c8997be0f286fe7360e026091e34_scale_000",
+    "object_uid": "7dca6756e079929f07664174ae13f454ef33c016580ad5b27ce8f3b5d45b693e",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999000236392021,
+      0.07383999973535538,
+      0.046150000765919685
+    ],
+    "urdf_relative": "object_urdf/bc9252f694e5b94f90f10af18c5f3a458877c8997be0f286fe7360e026091e34_scale_000.urdf",
+    "urdf_sha256": "0c9930d6f7cb41212137419465218bbdb2974261caea96108b611c86486d2d74"
+  },
+  "805a36bb17cdbaec361584cf56d57892c7ac8f98866d9d149940fd4dd8dd7d06": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/6f20622759343c6129bf3b424ed0d743951c35cf6aeea38616ce350b79c299e1_scale_000.stl",
+    "mesh_sha256": "58ec6f8134cde74a3aaa34f978f958339b03bd6844208a46f51129b30cc66cc1",
+    "object_id": "6f20622759343c6129bf3b424ed0d743951c35cf6aeea38616ce350b79c299e1_scale_000",
+    "object_uid": "805a36bb17cdbaec361584cf56d57892c7ac8f98866d9d149940fd4dd8dd7d06",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06522035971283913,
+      0.11971999704837799,
+      0.044895000755786896
+    ],
+    "urdf_relative": "object_urdf/6f20622759343c6129bf3b424ed0d743951c35cf6aeea38616ce350b79c299e1_scale_000.urdf",
+    "urdf_sha256": "b16e5b524d2db63f92be24f4d508ecb8d441b62b7270dd9e808eda34510d91db"
+  },
+  "80890e0f01f13359fe4813edc751778fc0d3bba5caff3ead0d407f33a1eb4afe": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/8d3c346fc449840302f3e56b9a361cc570267d397b3766e82a9a99c206200925_scale_649.stl",
+    "mesh_sha256": "6cfe3429db0dcb922f3f06a41629b2045e02674a6ada9f32decc2f4ad1d0599b",
+    "object_id": "8d3c346fc449840302f3e56b9a361cc570267d397b3766e82a9a99c206200925_scale_649",
+    "object_uid": "80890e0f01f13359fe4813edc751778fc0d3bba5caff3ead0d407f33a1eb4afe",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08429118990898132,
+      0.0894152969121933,
+      0.09166958183050156
+    ],
+    "urdf_relative": "object_urdf/8d3c346fc449840302f3e56b9a361cc570267d397b3766e82a9a99c206200925_scale_649.urdf",
+    "urdf_sha256": "f117db837d9f0c063a853dfc17acadbafffc805c1fe8c549e48233eeaa8bfae8"
+  },
+  "838fd7fce7f31dbbffa5e551953c8c018c20423ba42c702eafc396166b87fc83": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/266cb371bd93a43427be66918658770c5888208d9c026aa9c95e576b25b10a09_scale_047.stl",
+    "mesh_sha256": "12be9b2df69b6a2022083e6d6d081fbd9f5c23d61a6c3e6a388a405310efb04d",
+    "object_id": "266cb371bd93a43427be66918658770c5888208d9c026aa9c95e576b25b10a09_scale_047",
+    "object_uid": "838fd7fce7f31dbbffa5e551953c8c018c20423ba42c702eafc396166b87fc83",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06963581964373589,
+      0.055200593546032906,
+      0.10333394259214401
+    ],
+    "urdf_relative": "object_urdf/266cb371bd93a43427be66918658770c5888208d9c026aa9c95e576b25b10a09_scale_047.urdf",
+    "urdf_sha256": "03bc0aef7797cb67e545fda11c8c196899fc3cfeb280569da55e035e1228f42c"
+  },
+  "84393e099fffd917ebd1fdf42b7817b28c7cda8c7f87532c05f92272f56080c5": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/bb7284c42f988eff6e2d91c1050710285a8d09664476219f1f6c1fa50270ad4d_scale_009.stl",
+    "mesh_sha256": "6bbc5b0041a467e3d643e635a911ba6bef54c7a5867f9d619bd5bdd04ecd39a8",
+    "object_id": "bb7284c42f988eff6e2d91c1050710285a8d09664476219f1f6c1fa50270ad4d_scale_009",
+    "object_uid": "84393e099fffd917ebd1fdf42b7817b28c7cda8c7f87532c05f92272f56080c5",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09000000357627869,
+      0.09000000357627869,
+      0.09000000357627869
+    ],
+    "urdf_relative": "object_urdf/bb7284c42f988eff6e2d91c1050710285a8d09664476219f1f6c1fa50270ad4d_scale_009.urdf",
+    "urdf_sha256": "bbf5a76e08729e4d215e85245c768ff902cdb56d17129f4e783b2ee82c31d747"
+  },
+  "86b65047a1f481bb510bae43251fdbb4e739c6a2ced3c080ef9cb3a14df7b24f": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/cac1532f0644046d61f2a4e467f70f0243ff191f56a5b9e682f00b23c4fc756f_scale_001.stl",
+    "mesh_sha256": "ae483f6e398b916b7a436be2a15c6214c1fe01682ac97c725649654ee4147993",
+    "object_id": "cac1532f0644046d61f2a4e467f70f0243ff191f56a5b9e682f00b23c4fc756f_scale_001",
+    "object_uid": "86b65047a1f481bb510bae43251fdbb4e739c6a2ced3c080ef9cb3a14df7b24f",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.119422797113657,
+      0.06824159622192383,
+      0.06824159994721413
+    ],
+    "urdf_relative": "object_urdf/cac1532f0644046d61f2a4e467f70f0243ff191f56a5b9e682f00b23c4fc756f_scale_001.urdf",
+    "urdf_sha256": "e56e6493b0a1b722969fbfe490f947a73ca388efb23175b23e3eaab9440390b8"
+  },
+  "86c27af18dcb7091795a02fdb8825fa42824726d8e9a315cc3e1be4187bfb080": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/90d3ff66790190185fcaa8a5f9250bbed21292ef12f81b9241e5bfe489e9512f_scale_127.stl",
+    "mesh_sha256": "f0a26bee47ac592535f8aaa187992fea2cf803dc518bb09a3383d107a144ad51",
+    "object_id": "90d3ff66790190185fcaa8a5f9250bbed21292ef12f81b9241e5bfe489e9512f_scale_127",
+    "object_uid": "86c27af18dcb7091795a02fdb8825fa42824726d8e9a315cc3e1be4187bfb080",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11695163324475288,
+      0.10901154577732086,
+      0.09664380550384521
+    ],
+    "urdf_relative": "object_urdf/90d3ff66790190185fcaa8a5f9250bbed21292ef12f81b9241e5bfe489e9512f_scale_127.urdf",
+    "urdf_sha256": "a2f318c72c0c682f6e7b2cddf9f9e82b2671b0ef9e6e301b28f348cd591e4e5f"
+  },
+  "8ae4a554dffc427373c0b7e5e6c3ee92fc6377886256ab348c50344e3fe71603": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/8a1fac578bd672922ae2e8b677c3506b2e521e074947e17a0b27fb70ae0ca35b_scale_000.stl",
+    "mesh_sha256": "dd78d5b4f29cfa6aefccbd63dc923f604c8be8f20c631ec2e2690dfb21a2ca04",
+    "object_id": "8a1fac578bd672922ae2e8b677c3506b2e521e074947e17a0b27fb70ae0ca35b_scale_000",
+    "object_uid": "8ae4a554dffc427373c0b7e5e6c3ee92fc6377886256ab348c50344e3fe71603",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12000999972224236,
+      0.12001000344753265,
+      0.1184893548488617
+    ],
+    "urdf_relative": "object_urdf/8a1fac578bd672922ae2e8b677c3506b2e521e074947e17a0b27fb70ae0ca35b_scale_000.urdf",
+    "urdf_sha256": "0033f372f21b2e61c43e990db0cebe1fd29100f298d7948a47aaeadf3b6b687e"
+  },
+  "8d3dc0ac8484e13b15bd29fa54388a150e6b0a4e8b2da76a8f9e17b062db4ca7": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/987d39132e1d0113ded396861fb6bdf4cab4b562af7a3ebfda4ef192945acd4b_scale_284.stl",
+    "mesh_sha256": "d94bd51c8f7e167dd2da43992b6919783734024377ab0ff0ef694c02f2922479",
+    "object_id": "987d39132e1d0113ded396861fb6bdf4cab4b562af7a3ebfda4ef192945acd4b_scale_284",
+    "object_uid": "8d3dc0ac8484e13b15bd29fa54388a150e6b0a4e8b2da76a8f9e17b062db4ca7",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08226948603987694,
+      0.08226948976516724,
+      0.11999998241662979
+    ],
+    "urdf_relative": "object_urdf/987d39132e1d0113ded396861fb6bdf4cab4b562af7a3ebfda4ef192945acd4b_scale_284.urdf",
+    "urdf_sha256": "2f0d076a12d6b296f79ae70f9925854215e9778442ad414170c89559c0859ee7"
+  },
+  "8e774702648835f5411cf4ea26fc31ce723b746fa53222192932b1e4dc386d1a": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/1fc00ff0e8a291a45dc31ef7c9847ac607229c46c3fe187106948f2500368c62_scale_409.stl",
+    "mesh_sha256": "777b76160daf77184ddfacda19bf3aab477613a0ce0c751096f8c363bae4aff4",
+    "object_id": "1fc00ff0e8a291a45dc31ef7c9847ac607229c46c3fe187106948f2500368c62_scale_409",
+    "object_uid": "8e774702648835f5411cf4ea26fc31ce723b746fa53222192932b1e4dc386d1a",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10249502956867218,
+      0.09945759177207947,
+      0.06966453045606613
+    ],
+    "urdf_relative": "object_urdf/1fc00ff0e8a291a45dc31ef7c9847ac607229c46c3fe187106948f2500368c62_scale_409.urdf",
+    "urdf_sha256": "d95295b2f69484082d5feb5d88481a38b54383e0d3a744f2552e68c27dcb44f8"
+  },
+  "91d543fb9978a6c9f917c7d54e578554777a347900ffc5937849c19ddee9c38e": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/2b42ca7fdfc98ff318860c5285fee666660a52ecd6c629b1df4ff4f085eadd1c_scale_000.stl",
+    "mesh_sha256": "7746c944972754e1a2598a49e2a2b9af27b718054026b3d3e7ab360e96fcca50",
+    "object_id": "2b42ca7fdfc98ff318860c5285fee666660a52ecd6c629b1df4ff4f085eadd1c_scale_000",
+    "object_uid": "91d543fb9978a6c9f917c7d54e578554777a347900ffc5937849c19ddee9c38e",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.05215119943022728,
+      0.12001920491456985,
+      0.01857439987361431
+    ],
+    "urdf_relative": "object_urdf/2b42ca7fdfc98ff318860c5285fee666660a52ecd6c629b1df4ff4f085eadd1c_scale_000.urdf",
+    "urdf_sha256": "86df9e849fcb50795b6dc4967c15b2c4e32d1713d956c0ad2bf274100f30d49d"
+  },
+  "944449dd9f04d008c8c4314fcdce293c68860a8021e6969ffa815fa534a77ccb": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/612be4db65499cc9f01a90ad2163c13c0b4a68dc3833ef70a547843ed3fd10f0_scale_009.stl",
+    "mesh_sha256": "f1aa1fd37e61fd6559b484dd993b8206a8a1f5d0bb7025838ad3d04584676709",
+    "object_id": "612be4db65499cc9f01a90ad2163c13c0b4a68dc3833ef70a547843ed3fd10f0_scale_009",
+    "object_uid": "944449dd9f04d008c8c4314fcdce293c68860a8021e6969ffa815fa534a77ccb",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.1326650083065033,
+      0.08263134956359863,
+      0.095518808811903
+    ],
+    "urdf_relative": "object_urdf/612be4db65499cc9f01a90ad2163c13c0b4a68dc3833ef70a547843ed3fd10f0_scale_009.urdf",
+    "urdf_sha256": "63806216bcbda75399dee4bf2a5d613ea789a79ff8e859e52e5790c45436cf9e"
+  },
+  "9768e4f255d43029661534481c2315badf895dc8f41a13c096942d9be227bc47": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/afbb07e0191d8d2e207736feb336ed586e761b7482d38a2ed6a631f6c67f117e_scale_050.stl",
+    "mesh_sha256": "3b6b1a7a3c1a51a709b2068898b1b35b7c3d3a8e6c16a2531b87200dbf16e4fd",
+    "object_id": "afbb07e0191d8d2e207736feb336ed586e761b7482d38a2ed6a631f6c67f117e_scale_050",
+    "object_uid": "9768e4f255d43029661534481c2315badf895dc8f41a13c096942d9be227bc47",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.03895159624516964,
+      0.10886978730559349,
+      0.11814790591597557
+    ],
+    "urdf_relative": "object_urdf/afbb07e0191d8d2e207736feb336ed586e761b7482d38a2ed6a631f6c67f117e_scale_050.urdf",
+    "urdf_sha256": "b67e7e3cd1d444cab947ce41bffd0b0da696540f73ec1992eadceb3906f1ccb0"
+  },
+  "99103f777cd0aa1a41d9a990a129043dd3be1e92650685da7d299f189b337a85": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/69613606371e20fdca6bd6a7d6094faaa610f1b0ddd14e8d5311a0e3ca9b99d3_scale_010.stl",
+    "mesh_sha256": "6456851eed279407e43c84df24c25abd4eca93d4d269e1720ff7cba11c5671a4",
+    "object_id": "69613606371e20fdca6bd6a7d6094faaa610f1b0ddd14e8d5311a0e3ca9b99d3_scale_010",
+    "object_uid": "99103f777cd0aa1a41d9a990a129043dd3be1e92650685da7d299f189b337a85",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612
+    ],
+    "urdf_relative": "object_urdf/69613606371e20fdca6bd6a7d6094faaa610f1b0ddd14e8d5311a0e3ca9b99d3_scale_010.urdf",
+    "urdf_sha256": "49ce591244f010e55f04e27c0120394e6164e86a85c05cb2fa8bf3cadfd8ae0b"
+  },
+  "9a2e70c028207672294fdd47672c2eebb83533bc7b93aaec221208bf60815c38": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/37fb3fe4c6876dfb9c5915800ec5e9f69c7c55e7ee9b07e10f23b9162a04f088_scale_001.stl",
+    "mesh_sha256": "b93b1559cbd2c0bd5879365ec0fc09c574c3a9083d9d9fd21c21ebf810321463",
+    "object_id": "37fb3fe4c6876dfb9c5915800ec5e9f69c7c55e7ee9b07e10f23b9162a04f088_scale_001",
+    "object_uid": "9a2e70c028207672294fdd47672c2eebb83533bc7b93aaec221208bf60815c38",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.07799999788403511,
+      0.08999999798834324,
+      0.11999999731779099
+    ],
+    "urdf_relative": "object_urdf/37fb3fe4c6876dfb9c5915800ec5e9f69c7c55e7ee9b07e10f23b9162a04f088_scale_001.urdf",
+    "urdf_sha256": "9ac1ee2f9455181167c3ad91dc257e828cbed18b869d254efdfb255cb87402b8"
+  },
+  "9abc6878b5fdf426ecd792d63af36056e99a0092897b32b38afe020b83a25aeb": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/c75db62017aaee6491dda52d915a95ebe618a8c8bfa59203ffb74ae06aa6783c_scale_000.stl",
+    "mesh_sha256": "6137847eb9936c9a0a6b7b9f519c325849b7fdbd32f30a34af94679ae8d26446",
+    "object_id": "c75db62017aaee6491dda52d915a95ebe618a8c8bfa59203ffb74ae06aa6783c_scale_000",
+    "object_uid": "9abc6878b5fdf426ecd792d63af36056e99a0092897b32b38afe020b83a25aeb",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12011999636888504,
+      0.12011999636888504,
+      0.06552000343799591
+    ],
+    "urdf_relative": "object_urdf/c75db62017aaee6491dda52d915a95ebe618a8c8bfa59203ffb74ae06aa6783c_scale_000.urdf",
+    "urdf_sha256": "fd04c9b748c6c1de544f9921438aa62267979b1e54a84cc5bb4fc8cfa0a16b15"
+  },
+  "9dd02a440df68ece1d3e2f61a030019493d2b9e088454b69d3d5bdd9b720b5b8": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/7804ac7c1212295af93a072c8969b111309b3722e254f4aaf855d4b9194a8a46_scale_747.stl",
+    "mesh_sha256": "200c44c722c38db821cee3f0e97091e3501ec9c41a56d6790f1f73a5708b5365",
+    "object_id": "7804ac7c1212295af93a072c8969b111309b3722e254f4aaf855d4b9194a8a46_scale_747",
+    "object_uid": "9dd02a440df68ece1d3e2f61a030019493d2b9e088454b69d3d5bdd9b720b5b8",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08467147499322891,
+      0.06723802164196968,
+      0.08024025708436966
+    ],
+    "urdf_relative": "object_urdf/7804ac7c1212295af93a072c8969b111309b3722e254f4aaf855d4b9194a8a46_scale_747.urdf",
+    "urdf_sha256": "d7021b7d865db1dc676decd93b11522994b0cb6fd4f9f2a66ee09a0af3c13459"
+  },
+  "a1a21d23ff20bd43e23ef90a5f36718492bdacf8a413a3009a7b0e375efd3d71": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/d80173ada16f52f7772b26bcab3ea8c433c2ac1d144635735b2006cbce597b38_scale_000.stl",
+    "mesh_sha256": "b79c1e259466858675a74d9d6cfaafedba277ab41c09a6dcf010c4924c62dae6",
+    "object_id": "d80173ada16f52f7772b26bcab3ea8c433c2ac1d144635735b2006cbce597b38_scale_000",
+    "object_uid": "a1a21d23ff20bd43e23ef90a5f36718492bdacf8a413a3009a7b0e375efd3d71",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.023835050873458385,
+      0.11998514086008072,
+      0.1199713908135891
+    ],
+    "urdf_relative": "object_urdf/d80173ada16f52f7772b26bcab3ea8c433c2ac1d144635735b2006cbce597b38_scale_000.urdf",
+    "urdf_sha256": "b5ea38a837039ed85f74b2f74ff59e5cbf44a379fc36fbebd00615eef7bc8379"
+  },
+  "a93d6471d22743603c968f2704174b4966508a550b6fe0cda28d2b4bee59edd2": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/9cae740430471d72bbdfc4f7dfe41a9415fffde32ded8971300c0b98ffeb1e4a_scale_208.stl",
+    "mesh_sha256": "304f282b25b4b013fc13292434a9dc613b831624c8c49fc01e335b826d3d565f",
+    "object_id": "9cae740430471d72bbdfc4f7dfe41a9415fffde32ded8971300c0b98ffeb1e4a_scale_208",
+    "object_uid": "a93d6471d22743603c968f2704174b4966508a550b6fe0cda28d2b4bee59edd2",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06641510874032974,
+      0.07471698522567749,
+      0.11000002175569534
+    ],
+    "urdf_relative": "object_urdf/9cae740430471d72bbdfc4f7dfe41a9415fffde32ded8971300c0b98ffeb1e4a_scale_208.urdf",
+    "urdf_sha256": "f2aed3c4687fe3b8c546c6be853f300745a4c5ec5ecc0fe9fbdb545e2e7838d6"
+  },
+  "aa86aafa4c382084932c30ae3e203decec386df1973e4b5758835f25569f7fae": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/4bee92d9b2263d6a08bc6c0c7ad57317ed28a34977c7b34a0ea254c4275be5ff_scale_388.stl",
+    "mesh_sha256": "4cc2f571f3cf3fae1782f0e85094fb0ea780f996aafc40590c9e6cd098f31a53",
+    "object_id": "4bee92d9b2263d6a08bc6c0c7ad57317ed28a34977c7b34a0ea254c4275be5ff_scale_388",
+    "object_uid": "aa86aafa4c382084932c30ae3e203decec386df1973e4b5758835f25569f7fae",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.03451824001967907,
+      0.08029191941022873,
+      0.08809786289930344
+    ],
+    "urdf_relative": "object_urdf/4bee92d9b2263d6a08bc6c0c7ad57317ed28a34977c7b34a0ea254c4275be5ff_scale_388.urdf",
+    "urdf_sha256": "d853168a80e876380006defc120bc80a2299c10a6a4500a670f6564fe4b94421"
+  },
+  "ac1a1155b44c6e14463173021f4c96a32bd766c2d2b1c70ebe63cf81bb8dfb0e": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/80d07eabbcb90e7cc95b2900b5b3593e0a63286825cb42a467e81ba6d17bae49_scale_026.stl",
+    "mesh_sha256": "020ce23ae879744e2acd8bcad7fd20438676925981ad1dca3a78206742c0dfb1",
+    "object_id": "80d07eabbcb90e7cc95b2900b5b3593e0a63286825cb42a467e81ba6d17bae49_scale_026",
+    "object_uid": "ac1a1155b44c6e14463173021f4c96a32bd766c2d2b1c70ebe63cf81bb8dfb0e",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09798339009284973,
+      0.10004021972417831,
+      0.09818363934755325
+    ],
+    "urdf_relative": "object_urdf/80d07eabbcb90e7cc95b2900b5b3593e0a63286825cb42a467e81ba6d17bae49_scale_026.urdf",
+    "urdf_sha256": "d9ca357b6469670ec1c0cdd9fdaf670faa1211c6714ddda0f165361b78e60fac"
+  },
+  "ad54897b2ec89afe23a96d3e7864187710e0e98e151e3621ea20c6cc03c861f5": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/1d5f0c4d34447bb570f10fbf144f25f34c4c8618c92e9cb4eb5d6b5475efa647_scale_005.stl",
+    "mesh_sha256": "cf42144a9094347775846550076179234238217c10f7597bb4710ebd98e60f68",
+    "object_id": "1d5f0c4d34447bb570f10fbf144f25f34c4c8618c92e9cb4eb5d6b5475efa647_scale_005",
+    "object_uid": "ad54897b2ec89afe23a96d3e7864187710e0e98e151e3621ea20c6cc03c861f5",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.1305445171892643,
+      0.1261216253042221,
+      0.1155581884086132
+    ],
+    "urdf_relative": "object_urdf/1d5f0c4d34447bb570f10fbf144f25f34c4c8618c92e9cb4eb5d6b5475efa647_scale_005.urdf",
+    "urdf_sha256": "ab888a2150fa135730ede8d1167eced4e1afe9237a214442e390a0f65b90770c"
+  },
+  "aec7e8667469e014b99aae893e1ac0a25a972d4bdf257465586b6459fb0a4e84": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/acbd26237f5cfae3a5786453bdc244e48c40499e1dd209b14a05aa5936777566_scale_083.stl",
+    "mesh_sha256": "8bb9db15fa1aa054be20857ba0dbbeffe665514432730038f49348e0a0ebdd69",
+    "object_id": "acbd26237f5cfae3a5786453bdc244e48c40499e1dd209b14a05aa5936777566_scale_083",
+    "object_uid": "aec7e8667469e014b99aae893e1ac0a25a972d4bdf257465586b6459fb0a4e84",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.07307284697890282,
+      0.0649979542940855,
+      0.1199999563395977
+    ],
+    "urdf_relative": "object_urdf/acbd26237f5cfae3a5786453bdc244e48c40499e1dd209b14a05aa5936777566_scale_083.urdf",
+    "urdf_sha256": "68cfa279dbd4e5afa6fe49bc2c13fa7f4dc0c0d5edec5e502ab76439d02014a1"
+  },
+  "b04073752110cc6edc78e2cd6d74922af5cb616e4986d37447b237e611f50885": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/c004a9e6d772c6cdf027826e95b0d9bbc6875ab868d68e31993e051aef27b33a_scale_000.stl",
+    "mesh_sha256": "12b404d94170392454027f14e9dba9920e92be4bfade82f15eeaceb5751d3c1c",
+    "object_id": "c004a9e6d772c6cdf027826e95b0d9bbc6875ab868d68e31993e051aef27b33a_scale_000",
+    "object_uid": "b04073752110cc6edc78e2cd6d74922af5cb616e4986d37447b237e611f50885",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09016000106930733,
+      0.09016000106930733,
+      0.08999603614211082
+    ],
+    "urdf_relative": "object_urdf/c004a9e6d772c6cdf027826e95b0d9bbc6875ab868d68e31993e051aef27b33a_scale_000.urdf",
+    "urdf_sha256": "3b49ae661d114a6c876943c4fdb18d34cbe1e8fcf6ae694c749748417a70dd40"
+  },
+  "b285deb89098bb01c437f03016044da3c3b076bbf4cd7d1386649b493f736ab3": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/88f5ccad17d7a5e2667b59f14010e6ecb2f58c109c98f7dfb0294aac81539420_scale_011.stl",
+    "mesh_sha256": "d789767ade54c3c06a09dfaa367a6089752fa55c8093c0a2a6b3bf421f7e5595",
+    "object_id": "88f5ccad17d7a5e2667b59f14010e6ecb2f58c109c98f7dfb0294aac81539420_scale_011",
+    "object_uid": "b285deb89098bb01c437f03016044da3c3b076bbf4cd7d1386649b493f736ab3",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10999999940395355,
+      0.10999999940395355,
+      0.11000000312924385
+    ],
+    "urdf_relative": "object_urdf/88f5ccad17d7a5e2667b59f14010e6ecb2f58c109c98f7dfb0294aac81539420_scale_011.urdf",
+    "urdf_sha256": "c3a5cb1674d67e0255340211eb504fdcadda1497abb8f36fefa95185a8b56650"
+  },
+  "b464cf2b663397e1bd55859fae17a33fd74d26143e7d23b49414eef5ba6ac9ef": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/f40a0a35a0622e742cabac56fa4c93999186f0e81610af96a7a3759b39a931c1_scale_196.stl",
+    "mesh_sha256": "34bc8acad890e03d1347ee25661d1df2fa12d2fbd7dda6f72e6bead51d5e1271",
+    "object_id": "f40a0a35a0622e742cabac56fa4c93999186f0e81610af96a7a3759b39a931c1_scale_196",
+    "object_uid": "b464cf2b663397e1bd55859fae17a33fd74d26143e7d23b49414eef5ba6ac9ef",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12000001221895218,
+      0.08590080961585045,
+      0.07909037917852402
+    ],
+    "urdf_relative": "object_urdf/f40a0a35a0622e742cabac56fa4c93999186f0e81610af96a7a3759b39a931c1_scale_196.urdf",
+    "urdf_sha256": "83940affca651f74271f0a8f3c5201a84a4ca35eb8fabe8f6ecd55e487f3084e"
+  },
+  "b4712268384df97c366b8d61664e0452f01e1c7be89b9945cba9d1327e1afdc0": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/eb94706ddc01aec3419de36b52250f7b1eb05b56dbedb055f87c6f414fcc700c_scale_008.stl",
+    "mesh_sha256": "37053bcd57c7cd37cc4674ea72709ffe62b0402e865454e39e7bc215e419cfac",
+    "object_id": "eb94706ddc01aec3419de36b52250f7b1eb05b56dbedb055f87c6f414fcc700c_scale_008",
+    "object_uid": "b4712268384df97c366b8d61664e0452f01e1c7be89b9945cba9d1327e1afdc0",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11000015959143639,
+      0.048185912892222404,
+      0.08955765143036842
+    ],
+    "urdf_relative": "object_urdf/eb94706ddc01aec3419de36b52250f7b1eb05b56dbedb055f87c6f414fcc700c_scale_008.urdf",
+    "urdf_sha256": "fbfc931065f2096692222d038c37e756ad50dfcf4a5632cb5d0dd47ac26a9889"
+  },
+  "b4b464e57b09236cfea1237fa5830e1ba6710b8d83b9db64f27cc873d321983f": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/2341ba14755ea1cdd95a737860b0646d919b3cbede79f2baf54e17632f89d58e_scale_000.stl",
+    "mesh_sha256": "95c746053d194bb56ec88af37c783ce9e7b43fb113f91f071c9293270dab181c",
+    "object_id": "2341ba14755ea1cdd95a737860b0646d919b3cbede79f2baf54e17632f89d58e_scale_000",
+    "object_uid": "b4b464e57b09236cfea1237fa5830e1ba6710b8d83b9db64f27cc873d321983f",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08469624072313309,
+      0.08469780907034874,
+      0.11998677998781204
+    ],
+    "urdf_relative": "object_urdf/2341ba14755ea1cdd95a737860b0646d919b3cbede79f2baf54e17632f89d58e_scale_000.urdf",
+    "urdf_sha256": "e80170f8ad7505afb89689ac155b9292851dea07e6090fe5e79995d99c2b53ae"
+  },
+  "b50f7e7cdbabd545edef27500ef75d1a8d859aeea0b97c2dfc7a727886944836": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/45add60dd2745d307998d7842b2eb17c544dd1e7faac530c4aec25381d6f79b8_scale_000.stl",
+    "mesh_sha256": "8bdf230b7ad6f4a947a58a1350bdad2b6e623048cc0fa390f9ed1e9c8f0ae15a",
+    "object_id": "45add60dd2745d307998d7842b2eb17c544dd1e7faac530c4aec25381d6f79b8_scale_000",
+    "object_uid": "b50f7e7cdbabd545edef27500ef75d1a8d859aeea0b97c2dfc7a727886944836",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10244619473814964,
+      0.12004400417208672,
+      0.062116341665387154
+    ],
+    "urdf_relative": "object_urdf/45add60dd2745d307998d7842b2eb17c544dd1e7faac530c4aec25381d6f79b8_scale_000.urdf",
+    "urdf_sha256": "17227ed304b1be4c53a3b96c95e4bd37977293fecb5b7ef2c8f85f06c2d806b8"
+  },
+  "b72680f3a5b0b5e165d6d66e2b283ac044bb04b8ec16e9c6490eaf5339b50a1a": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/1b8b1d4cc9c319ff3596abbb52cbde279b264dd4f6c4433812c57c45110441fc_scale_086.stl",
+    "mesh_sha256": "99478bc2087a262dfda9d1fe842f0248494a5d7f0de1cccafec5d48744d544b2",
+    "object_id": "1b8b1d4cc9c319ff3596abbb52cbde279b264dd4f6c4433812c57c45110441fc_scale_086",
+    "object_uid": "b72680f3a5b0b5e165d6d66e2b283ac044bb04b8ec16e9c6490eaf5339b50a1a",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.1039888821542263,
+      0.09331193938851357,
+      0.09341778606176376
+    ],
+    "urdf_relative": "object_urdf/1b8b1d4cc9c319ff3596abbb52cbde279b264dd4f6c4433812c57c45110441fc_scale_086.urdf",
+    "urdf_sha256": "2d068e4286beb753d2d771f358cc08f4e980741755e1103170fadd88eb579b11"
+  },
+  "b7529d7179abd19fcb4735146f2f42cbc4c89da7f5fb9d6904e1f96b035bc16f": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/fecb694f8db3634dac29e3326a10085b94f9b2f73991288a864a0699af9d763f_scale_000.stl",
+    "mesh_sha256": "47f9a2149b26126ecde0113c30d5b5f088ce4aab8f363cb960f01f530eeb2724",
+    "object_id": "fecb694f8db3634dac29e3326a10085b94f9b2f73991288a864a0699af9d763f_scale_000",
+    "object_uid": "b7529d7179abd19fcb4735146f2f42cbc4c89da7f5fb9d6904e1f96b035bc16f",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999249085783958,
+      0.07000136189162731,
+      0.04312879964709282
+    ],
+    "urdf_relative": "object_urdf/fecb694f8db3634dac29e3326a10085b94f9b2f73991288a864a0699af9d763f_scale_000.urdf",
+    "urdf_sha256": "06c320e0c20fbf9d56c66b8a0f99b908a95507dcb5e3eee7f9810f6e277d7563"
+  },
+  "b91e64f8e5b5d2485f6aa6b2be8d6a7021a0b3bc4e06466accd33e619e8bd8dc": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/ee9b4c53c690bfaed54c14deb50a4714da2c38ad873e5eb3ac25592508365091_scale_011.stl",
+    "mesh_sha256": "3a563b9ce22121610edd2e3e84489156b031668b356ed13e2f90d72ee375cc13",
+    "object_id": "ee9b4c53c690bfaed54c14deb50a4714da2c38ad873e5eb3ac25592508365091_scale_011",
+    "object_uid": "b91e64f8e5b5d2485f6aa6b2be8d6a7021a0b3bc4e06466accd33e619e8bd8dc",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.03669879026710987,
+      0.10849599912762642,
+      0.10849599912762642
+    ],
+    "urdf_relative": "object_urdf/ee9b4c53c690bfaed54c14deb50a4714da2c38ad873e5eb3ac25592508365091_scale_011.urdf",
+    "urdf_sha256": "4828f190842b2ea80d9fc52275f234d04c8d80c587daf79377893c2bab12f8db"
+  },
+  "ba354faf94af6e72d90fefa9e5334dedb3dce5debaf34fab41d5720f72ff496b": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/6772e2ca357633809e4ac637726635bcddf375efde07ac2f2be1075d85f4f070_scale_029.stl",
+    "mesh_sha256": "650ab0e90e4e36f3426e0d882c07db2b23f64d5f425ed10879b8719dfe5b07fd",
+    "object_id": "6772e2ca357633809e4ac637726635bcddf375efde07ac2f2be1075d85f4f070_scale_029",
+    "object_uid": "ba354faf94af6e72d90fefa9e5334dedb3dce5debaf34fab41d5720f72ff496b",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09775101393461227,
+      0.053869061172008514,
+      0.12253490462899208
+    ],
+    "urdf_relative": "object_urdf/6772e2ca357633809e4ac637726635bcddf375efde07ac2f2be1075d85f4f070_scale_029.urdf",
+    "urdf_sha256": "6583fbeb22d907181f34ebce6acbfb62b8f533089530711ab147de7898c01c83"
+  },
+  "bbcca07c443ab48c8986d5ad8a1623c1eb3fdd3a0540aaaa7e2ff40d9f672a8e": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/aebe383e39469c8fc8639a94c0df18d4d59fe57e5df3c5b5f400bfb2ca674091_scale_000.stl",
+    "mesh_sha256": "3948a48133c70e29b80b4bd99ba409b24d4889c3d8e33bf720e1788589ffd2ae",
+    "object_id": "aebe383e39469c8fc8639a94c0df18d4d59fe57e5df3c5b5f400bfb2ca674091_scale_000",
+    "object_uid": "bbcca07c443ab48c8986d5ad8a1623c1eb3fdd3a0540aaaa7e2ff40d9f672a8e",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12001292407512665,
+      0.12000697478652,
+      0.016001999843865633
+    ],
+    "urdf_relative": "object_urdf/aebe383e39469c8fc8639a94c0df18d4d59fe57e5df3c5b5f400bfb2ca674091_scale_000.urdf",
+    "urdf_sha256": "95b916610684524e6cea509f1949757d88185558d82e57731582e6d8e33f2812"
+  },
+  "bd2d1d8ccfea24a975b4319155d9ed0c785df08c68e5c63dc72601d3e7aaa544": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/df22ab9abb81867956fe83121353c4189033c7d1da18a7cadc7573e78e06d60a_scale_465.stl",
+    "mesh_sha256": "1a5ffcef2a974b5fd1b637da3f8c4ecc1a04de649eeb5b086ce4223c9e50007f",
+    "object_id": "df22ab9abb81867956fe83121353c4189033c7d1da18a7cadc7573e78e06d60a_scale_465",
+    "object_uid": "bd2d1d8ccfea24a975b4319155d9ed0c785df08c68e5c63dc72601d3e7aaa544",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.1094638854265213,
+      0.07560059055685997,
+      0.05369479022920132
+    ],
+    "urdf_relative": "object_urdf/df22ab9abb81867956fe83121353c4189033c7d1da18a7cadc7573e78e06d60a_scale_465.urdf",
+    "urdf_sha256": "755fa5cb4942ea586832fa91c267670f60415ff5d5c3814b4b8d10e99dcd9f23"
+  },
+  "bd6cc57dfede03e63e27c9a97186eaf0709400bfb4334e275996a7c0a707143a": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/bdb990fa1ae375138c27a995eca86cb4221b41d26da65486efef481dee8fe3d5_scale_000.stl",
+    "mesh_sha256": "644356f65f1bc4904d27e6421229b9e2355c295ab73fddf5abca49af067ba621",
+    "object_id": "bdb990fa1ae375138c27a995eca86cb4221b41d26da65486efef481dee8fe3d5_scale_000",
+    "object_uid": "bd6cc57dfede03e63e27c9a97186eaf0709400bfb4334e275996a7c0a707143a",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.1199769526720047,
+      0.08138301223516464,
+      0.020219898782670498
+    ],
+    "urdf_relative": "object_urdf/bdb990fa1ae375138c27a995eca86cb4221b41d26da65486efef481dee8fe3d5_scale_000.urdf",
+    "urdf_sha256": "7a583464d547023642076dd2323e5bc8416bef1cb3187b58edc4d283e5996754"
+  },
+  "bdb5b5ca048330f818ed29ad8859bd248ef837d49ce2676dbafb7bb6616d1f77": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/cef06a6ff464693f829447970f2cb3b24c765a72d23c8b851b7ca03013e0eff4_scale_001.stl",
+    "mesh_sha256": "9fca1125007e8337532b32f04b2d74cb4c2a22564d4ece6665d5bc0d62b7fbbc",
+    "object_id": "cef06a6ff464693f829447970f2cb3b24c765a72d23c8b851b7ca03013e0eff4_scale_001",
+    "object_uid": "bdb5b5ca048330f818ed29ad8859bd248ef837d49ce2676dbafb7bb6616d1f77",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11824501305818558,
+      0.06007084809243679,
+      0.013967570383101702
+    ],
+    "urdf_relative": "object_urdf/cef06a6ff464693f829447970f2cb3b24c765a72d23c8b851b7ca03013e0eff4_scale_001.urdf",
+    "urdf_sha256": "cc209794ce40b555f1853fbdb6147783846e48805ed818f4a913f8ea98b1e767"
+  },
+  "c0983baf0a9de44eb000b0ee415fe017cab128f62feae31fa6c14eafba8eccbe": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/832f14afa4aaeefbbe8c18c74b5b552af516ca901ca8b83e2896b5cca9c2f13d_scale_001.stl",
+    "mesh_sha256": "d42ff53cc234b1fce72a211b2debb9e27243c0977dae6e3ae8c646522390b01e",
+    "object_id": "832f14afa4aaeefbbe8c18c74b5b552af516ca901ca8b83e2896b5cca9c2f13d_scale_001",
+    "object_uid": "c0983baf0a9de44eb000b0ee415fe017cab128f62feae31fa6c14eafba8eccbe",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10392305254936218,
+      0.08999999798834324,
+      0.11999999731779099
+    ],
+    "urdf_relative": "object_urdf/832f14afa4aaeefbbe8c18c74b5b552af516ca901ca8b83e2896b5cca9c2f13d_scale_001.urdf",
+    "urdf_sha256": "5a32a8cb11cf7057f4ec2ff0335be99ab6bc6283a3bb7a9120f8a6ef27854035"
+  },
+  "c188981a0d46f3bc5f79b19e10d0c0d299d40df21be5a36e16edb2e1e0b2dfa7": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/da2f1d86dfd6cc608d9ac84934ef3c7f27e3fe169eb6ff7a9c2ded86ebc9ad02_scale_257.stl",
+    "mesh_sha256": "02d1edec7997ad06d5edb9736695faf1671d951094c1154fdfb9cc39b0ac5e5e",
+    "object_id": "da2f1d86dfd6cc608d9ac84934ef3c7f27e3fe169eb6ff7a9c2ded86ebc9ad02_scale_257",
+    "object_uid": "c188981a0d46f3bc5f79b19e10d0c0d299d40df21be5a36e16edb2e1e0b2dfa7",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.04903417266905308,
+      0.09999999403953552,
+      0.05142245627939701
+    ],
+    "urdf_relative": "object_urdf/da2f1d86dfd6cc608d9ac84934ef3c7f27e3fe169eb6ff7a9c2ded86ebc9ad02_scale_257.urdf",
+    "urdf_sha256": "d608332ae220dc09fff58ae34888a9487b246d559072ca78ff27ba7180c1bc7a"
+  },
+  "c48903c31f24a9007c2fb2bf0852aa23d2360e1083f40bd36ac6bae5d0310f33": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/db7b6dbd7e29129094c08b8166ff0baed32e58bfa805275fc31eecfa73c195a7_scale_002.stl",
+    "mesh_sha256": "36343543c85e4a5f645351e7e336253d9193688c7c46c645deb94cfe8914cb52",
+    "object_id": "db7b6dbd7e29129094c08b8166ff0baed32e58bfa805275fc31eecfa73c195a7_scale_002",
+    "object_uid": "c48903c31f24a9007c2fb2bf0852aa23d2360e1083f40bd36ac6bae5d0310f33",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09115467965602875,
+      0.09120000153779984,
+      0.12000000104308128
+    ],
+    "urdf_relative": "object_urdf/db7b6dbd7e29129094c08b8166ff0baed32e58bfa805275fc31eecfa73c195a7_scale_002.urdf",
+    "urdf_sha256": "439ba93059807ace2eaf790a8830bb176c157b979bb9225c91260fa67145c133"
+  },
+  "c4d6a977eb223eb88a21ba335420cce07c23b0880e0319d525500c38d20df13a": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/00c381dc0a6feecb7ba13a3b86c0e9a3d527a8b33194c313a775fdf44ad30c16_scale_226.stl",
+    "mesh_sha256": "2f5efba5f8402afb047f27289b84f286847036752526a402dc94fbfb46fe45d2",
+    "object_id": "00c381dc0a6feecb7ba13a3b86c0e9a3d527a8b33194c313a775fdf44ad30c16_scale_226",
+    "object_uid": "c4d6a977eb223eb88a21ba335420cce07c23b0880e0319d525500c38d20df13a",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.0629132129251957,
+      0.07335843704640865,
+      0.1100173071026802
+    ],
+    "urdf_relative": "object_urdf/00c381dc0a6feecb7ba13a3b86c0e9a3d527a8b33194c313a775fdf44ad30c16_scale_226.urdf",
+    "urdf_sha256": "9fb9c02c2d56b8a9542394db70fd9a7e835e61de4c5e61c6849d5665473fad31"
+  },
+  "c58de0ff8100afea029688a1c7ad988c47377fb978e5148ea59ad68182dd35e8": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/71e7a792d350daefd154b43b26f05d20f2f34bccec7ab16ea0d3777d952a5af9_scale_000.stl",
+    "mesh_sha256": "88840a51ba6036efabe8d4b8932429ae2f02809836893d2aad264706975d0c65",
+    "object_id": "71e7a792d350daefd154b43b26f05d20f2f34bccec7ab16ea0d3777d952a5af9_scale_000",
+    "object_uid": "c58de0ff8100afea029688a1c7ad988c47377fb978e5148ea59ad68182dd35e8",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999999731779099,
+      0.0826839953660965,
+      0.07999999821186066
+    ],
+    "urdf_relative": "object_urdf/71e7a792d350daefd154b43b26f05d20f2f34bccec7ab16ea0d3777d952a5af9_scale_000.urdf",
+    "urdf_sha256": "1ffcf0057d36d9b9f2883bcd29c1ab7498a5665e6b2c861abd6db4cfab584ed7"
+  },
+  "d0fa60a6ce0e0b07173e25f53216ef37082f2f7453b031bb54decb9e77a7b9e5": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/889be85dbef98ea9909e39c1f5d512a42f44fda2fc5a660c1d6f44922d124257_scale_040.stl",
+    "mesh_sha256": "f5088f017eb65bada10c82bf631ccedfde733a9527b0e9ead29e43086e329b87",
+    "object_id": "889be85dbef98ea9909e39c1f5d512a42f44fda2fc5a660c1d6f44922d124257_scale_040",
+    "object_uid": "d0fa60a6ce0e0b07173e25f53216ef37082f2f7453b031bb54decb9e77a7b9e5",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08035720139741898,
+      0.06959137320518494,
+      0.09000005945563316
+    ],
+    "urdf_relative": "object_urdf/889be85dbef98ea9909e39c1f5d512a42f44fda2fc5a660c1d6f44922d124257_scale_040.urdf",
+    "urdf_sha256": "e78c93ec5d1357398051ad152d34e11a06e2adb225478bf8aac00d211de8bd7d"
+  },
+  "d2a71e72b08f6f53e9558db5c1640a604a63513f666d554287b449d6e6e30128": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/e913cb99b1ed0cd1a53e2c2a18a30403a0e48b53f79d214bda080986dd9b8a44_scale_010.stl",
+    "mesh_sha256": "6456851eed279407e43c84df24c25abd4eca93d4d269e1720ff7cba11c5671a4",
+    "object_id": "e913cb99b1ed0cd1a53e2c2a18a30403a0e48b53f79d214bda080986dd9b8a44_scale_010",
+    "object_uid": "d2a71e72b08f6f53e9558db5c1640a604a63513f666d554287b449d6e6e30128",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10000000149011612,
+      0.10000000149011612,
+      0.10000000149011612
+    ],
+    "urdf_relative": "object_urdf/e913cb99b1ed0cd1a53e2c2a18a30403a0e48b53f79d214bda080986dd9b8a44_scale_010.urdf",
+    "urdf_sha256": "ba79ca42b7b20125876832a746c093d74b60f64a809c9e3c9555942f33c74e8e"
+  },
+  "d4c0928690d98a94aaa7d64c1eecc24bdd122ae86c8fd5ed9c3f6bf75e3db894": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/180e7b9c0205ec23354dcd1c7b8443cf93a97241aae0e3f71ee4fcb1320fca16_scale_000.stl",
+    "mesh_sha256": "dc328bf687c0337dad90ce405539fa01d83ae12ba3d4bbf87702b94aa921ce5a",
+    "object_id": "180e7b9c0205ec23354dcd1c7b8443cf93a97241aae0e3f71ee4fcb1320fca16_scale_000",
+    "object_uid": "d4c0928690d98a94aaa7d64c1eecc24bdd122ae86c8fd5ed9c3f6bf75e3db894",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11998062208294868,
+      0.11998042091727257,
+      0.07939852215349674
+    ],
+    "urdf_relative": "object_urdf/180e7b9c0205ec23354dcd1c7b8443cf93a97241aae0e3f71ee4fcb1320fca16_scale_000.urdf",
+    "urdf_sha256": "3cb1881af429e35136a23252b4f5d51c5e0ff9022f2f55a5e609e28da2ee8b3c"
+  },
+  "d6716cb6931b716a05d6177a333047dc954d67619448a95578cca499c6e60162": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/2b2b751c35078751bfc7cd3675d8f7821e5c53b3b5522ae869826748bf76315a_scale_013.stl",
+    "mesh_sha256": "0bbbc89091dfa182d4aba94d6059ba4a7e378753ac5ce7643ae052bb104ed587",
+    "object_id": "2b2b751c35078751bfc7cd3675d8f7821e5c53b3b5522ae869826748bf76315a_scale_013",
+    "object_uid": "d6716cb6931b716a05d6177a333047dc954d67619448a95578cca499c6e60162",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10875146090984344,
+      0.11434805020689964,
+      0.12784499675035477
+    ],
+    "urdf_relative": "object_urdf/2b2b751c35078751bfc7cd3675d8f7821e5c53b3b5522ae869826748bf76315a_scale_013.urdf",
+    "urdf_sha256": "ac80194e13db4583d281819560de0a5b2644ab5cb4888f96cb3697136f56ac00"
+  },
+  "d77cad06051422eca8f126228ff664a89db81deaa9a55c85d6cb5685a1b82496": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/a08daa547751426b769967cad4b03e98ae3cf46093ee0af2694d360e7be8a394_scale_074.stl",
+    "mesh_sha256": "a3bf76eea11446e00d1c2b7cc07208e0787e17e3d6c407c9fb347d9fb6d39171",
+    "object_id": "a08daa547751426b769967cad4b03e98ae3cf46093ee0af2694d360e7be8a394_scale_074",
+    "object_uid": "d77cad06051422eca8f126228ff664a89db81deaa9a55c85d6cb5685a1b82496",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.05808823183178902,
+      0.09999999031424522,
+      0.032352935522794724
+    ],
+    "urdf_relative": "object_urdf/a08daa547751426b769967cad4b03e98ae3cf46093ee0af2694d360e7be8a394_scale_074.urdf",
+    "urdf_sha256": "747d765feb07c5b990b2d52dfb74b7dbe523710eccbabd9dcaeae1c993b7c188"
+  },
+  "ddd0d4952c15d9846b27fc1bfddebb80975496ecfce9a22a5f75755aa965535c": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/67d9d0da0796b8a35590dce0a082c347b3161a72571ac59b1cf6d842a7a90fb3_scale_198.stl",
+    "mesh_sha256": "a1c5f36b96431cb39d0d24f2d8c96c7e8a3b3f568b3cd217f756803945247546",
+    "object_id": "67d9d0da0796b8a35590dce0a082c347b3161a72571ac59b1cf6d842a7a90fb3_scale_198",
+    "object_uid": "ddd0d4952c15d9846b27fc1bfddebb80975496ecfce9a22a5f75755aa965535c",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.10000000894069672,
+      0.09435966238379478,
+      0.07608693838119507
+    ],
+    "urdf_relative": "object_urdf/67d9d0da0796b8a35590dce0a082c347b3161a72571ac59b1cf6d842a7a90fb3_scale_198.urdf",
+    "urdf_sha256": "5fde4f4234117a32d94ad332b3ce93630ea8d55821d0a28e02f0c180d5b7db24"
+  },
+  "deb450b692825d34d46a527e4ae99909429c84ec8db500780f7e4c6011ac2c41": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/ac0285a9d192f0f0ba66d6cfc0424a9637e94c2d57c1cd2866fb70769e35a17c_scale_001.stl",
+    "mesh_sha256": "6156ba9974b5db4744476a21b495bada9cee537c75ce22203c52adec91884f70",
+    "object_id": "ac0285a9d192f0f0ba66d6cfc0424a9637e94c2d57c1cd2866fb70769e35a17c_scale_001",
+    "object_uid": "deb450b692825d34d46a527e4ae99909429c84ec8db500780f7e4c6011ac2c41",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.07200000062584877,
+      0.09689998626708984,
+      0.12000000104308128
+    ],
+    "urdf_relative": "object_urdf/ac0285a9d192f0f0ba66d6cfc0424a9637e94c2d57c1cd2866fb70769e35a17c_scale_001.urdf",
+    "urdf_sha256": "c3ba23bbfe73d9d0f4ac0949822c0be7daa06fba46f9673c0555c3c269f02c21"
+  },
+  "e32d0f4439aee766b7e5f3421f9efe75865f3a23308d82ed303a0e324d90f214": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/0dc29d53d706875a8a626d40a2b13bd56fd729ac4e1e3fe3940c01c81af11cea_scale_200.stl",
+    "mesh_sha256": "4b8d2e0161809e83ae484c1b3f781130debdabf5fb0c59255e41678cbe5c782f",
+    "object_id": "0dc29d53d706875a8a626d40a2b13bd56fd729ac4e1e3fe3940c01c81af11cea_scale_200",
+    "object_uid": "e32d0f4439aee766b7e5f3421f9efe75865f3a23308d82ed303a0e324d90f214",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.06401873379945755,
+      0.1199650950729847,
+      0.12000004947185516
+    ],
+    "urdf_relative": "object_urdf/0dc29d53d706875a8a626d40a2b13bd56fd729ac4e1e3fe3940c01c81af11cea_scale_200.urdf",
+    "urdf_sha256": "aebce8f04a1d85841c35ef19cc2eb98f04926c242d2d3c112c97f3329b80d88f"
+  },
+  "e49a9d3ef59547680853100b1243611561d347f10167ffd4651a892ef0bd8ce8": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/5b5e55b4ca111fb0986c729b9c9184821d003a90809d8fa390322dc3b8b94147_scale_4998.stl",
+    "mesh_sha256": "ba443703592de8fec8e9ba1221053fbd0def8e70c7e35c7168641df95b416530",
+    "object_id": "5b5e55b4ca111fb0986c729b9c9184821d003a90809d8fa390322dc3b8b94147_scale_4998",
+    "object_uid": "e49a9d3ef59547680853100b1243611561d347f10167ffd4651a892ef0bd8ce8",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12494517490267754,
+      0.12494517490267754,
+      0.1249433122575283
+    ],
+    "urdf_relative": "object_urdf/5b5e55b4ca111fb0986c729b9c9184821d003a90809d8fa390322dc3b8b94147_scale_4998.urdf",
+    "urdf_sha256": "579a609cb904af5172881db18b809a277c89e10e0b559a6d402b205468d2af41"
+  },
+  "e525467c2593022f500ef5e5020ea721ff672848834ff17253c133c8c7bd33b3": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/330c132b36b240e87185f848e279dd2c0e7b1e4c9dd10131daf9ea3e5c286f3c_scale_002.stl",
+    "mesh_sha256": "ead3980973747457c82f21d4902b1ab4951bd8697e315a3da26ccc56e0900c48",
+    "object_id": "330c132b36b240e87185f848e279dd2c0e7b1e4c9dd10131daf9ea3e5c286f3c_scale_002",
+    "object_uid": "e525467c2593022f500ef5e5020ea721ff672848834ff17253c133c8c7bd33b3",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999999731779099,
+      0.12000000104308128,
+      0.04999999888241291
+    ],
+    "urdf_relative": "object_urdf/330c132b36b240e87185f848e279dd2c0e7b1e4c9dd10131daf9ea3e5c286f3c_scale_002.urdf",
+    "urdf_sha256": "f3e434dee652d63fb0f4a0e49495b3f49e871037bf04fed531f0b93356b2ee15"
+  },
+  "e976426bcee977ae616d2b2a698d8e442f87811dd86559c0d9fa2029c307b403": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/5ae0045f5642cc1533d173ea84f6829e8e3f9e12ce5694bd87ea6dfda354ebe7_scale_000.stl",
+    "mesh_sha256": "7ef202709a591e005ab21c7b7c55dc411d921e3ae0b42a2eccc220146ca3dcc3",
+    "object_id": "5ae0045f5642cc1533d173ea84f6829e8e3f9e12ce5694bd87ea6dfda354ebe7_scale_000",
+    "object_uid": "e976426bcee977ae616d2b2a698d8e442f87811dd86559c0d9fa2029c307b403",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12016800045967102,
+      0.12016800045967102,
+      0.01668999996036291
+    ],
+    "urdf_relative": "object_urdf/5ae0045f5642cc1533d173ea84f6829e8e3f9e12ce5694bd87ea6dfda354ebe7_scale_000.urdf",
+    "urdf_sha256": "b7e9e0228ec5508e8e04479e607c7f85bd518428695203eacf793d1da7eb0513"
+  },
+  "e9aee5b1d69157c4437f9dfb73a3cc3b3207ea20a810c051842cc52793324232": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/3e9bac8c515cfe2f0f10f80cbb92e87323ea1158bdb8463c3f61c8eb68a29e0f_scale_000.stl",
+    "mesh_sha256": "c8063649a80a0fcab4f0b9990b34fc1c0c12aa8777bdbc0dbbcdc21ae2235f6a",
+    "object_id": "3e9bac8c515cfe2f0f10f80cbb92e87323ea1158bdb8463c3f61c8eb68a29e0f_scale_000",
+    "object_uid": "e9aee5b1d69157c4437f9dfb73a3cc3b3207ea20a810c051842cc52793324232",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.051382727921009064,
+      0.07536770403385162,
+      0.11736202612519264
+    ],
+    "urdf_relative": "object_urdf/3e9bac8c515cfe2f0f10f80cbb92e87323ea1158bdb8463c3f61c8eb68a29e0f_scale_000.urdf",
+    "urdf_sha256": "1a471e35d7ff97a01e734be3baa6e184061bf8498d3fcd9ec0e95f703db1dd46"
+  },
+  "ead50c998491f9e002f3c0f50f9eabf8ee242e18ecf7d8e2b78877a437e56618": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/72e1087cc8365f68fea8e0bd751d7b21629c974bfbf0365bd4886c2eb50b9513_scale_000.stl",
+    "mesh_sha256": "09627af72203361b15fe3139bfab47d449a7bd43649299917ac27527f8cf9170",
+    "object_id": "72e1087cc8365f68fea8e0bd751d7b21629c974bfbf0365bd4886c2eb50b9513_scale_000",
+    "object_uid": "ead50c998491f9e002f3c0f50f9eabf8ee242e18ecf7d8e2b78877a437e56618",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08495664969086647,
+      0.02498724963515997,
+      0.11993879452347755
+    ],
+    "urdf_relative": "object_urdf/72e1087cc8365f68fea8e0bd751d7b21629c974bfbf0365bd4886c2eb50b9513_scale_000.urdf",
+    "urdf_sha256": "d17ed50e35ad471cab01376b9fc7ba30ae61cf621ae6fac416cf2469ec20c6be"
+  },
+  "ec6edf39312afcd5d84e058b763ad46e12b39df01cbc9059e59a00da0361fab2": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/cf001b7fc5a22cccb1881304aa9ab8d6440f0503f877d79a7014ec5c7d46f01c_scale_001.stl",
+    "mesh_sha256": "f49809acd5f0d031d2e4b9b9cdda556749fa590b717e87eb119bc17d0fc8b6d8",
+    "object_id": "cf001b7fc5a22cccb1881304aa9ab8d6440f0503f877d79a7014ec5c7d46f01c_scale_001",
+    "object_uid": "ec6edf39312afcd5d84e058b763ad46e12b39df01cbc9059e59a00da0361fab2",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11999409273266792,
+      0.11999667435884476,
+      0.11263610795140266
+    ],
+    "urdf_relative": "object_urdf/cf001b7fc5a22cccb1881304aa9ab8d6440f0503f877d79a7014ec5c7d46f01c_scale_001.urdf",
+    "urdf_sha256": "84e8b2ac345bd3d2ae7f110cbf7a37d4047574b4550c4000917cf93a5b185099"
+  },
+  "ecb48fcee15ba48ea9d8669c3f8aae1a970194f4ba51613124bbd4d69c889ed3": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/7c99b74c44007832debb92adfdd7ef5bdd87fb331e588cab908913b46eedeb0d_scale_001.stl",
+    "mesh_sha256": "07177c14d623ce64ef35808f8345da0110f16e1b28f566e6744101cd304ddd82",
+    "object_id": "7c99b74c44007832debb92adfdd7ef5bdd87fb331e588cab908913b46eedeb0d_scale_001",
+    "object_uid": "ecb48fcee15ba48ea9d8669c3f8aae1a970194f4ba51613124bbd4d69c889ed3",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.08427801355719566,
+      0.1199909970164299,
+      0.08431800082325935
+    ],
+    "urdf_relative": "object_urdf/7c99b74c44007832debb92adfdd7ef5bdd87fb331e588cab908913b46eedeb0d_scale_001.urdf",
+    "urdf_sha256": "9d3b42e702fcdf2a0316abd91824b6b8f44ed493e644d5a89a5a16ae318a5cc8"
+  },
+  "f3a8c792d7fc60105e3f1b82a780d68ef112b79737859ae49198443fa0deb3c9": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/772aba1cc0a063f3e1e82f5594b31689a7f26bf7665d4f0cbf36681617bf8e6a_scale_000.stl",
+    "mesh_sha256": "174bac7de9eb9e5cf1d1b1016ee0717094d5c1ce790233a9882c623f5638f76e",
+    "object_id": "772aba1cc0a063f3e1e82f5594b31689a7f26bf7665d4f0cbf36681617bf8e6a_scale_000",
+    "object_uid": "f3a8c792d7fc60105e3f1b82a780d68ef112b79737859ae49198443fa0deb3c9",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.0871528796851635,
+      0.0871528796851635,
+      0.12002339959144592
+    ],
+    "urdf_relative": "object_urdf/772aba1cc0a063f3e1e82f5594b31689a7f26bf7665d4f0cbf36681617bf8e6a_scale_000.urdf",
+    "urdf_sha256": "4bba8794cfbc121c7e73f554923e5cd608d983d09fca87cb223e7e4baafb9e5d"
+  },
+  "f438153a0d98370c892e29ac780156e7c684eca6991d6c7e694d88251fbd38d4": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/59671a0f6423d18d21abc14cdf54966e2acdaf56bdb1912c49c1ba6555188261_scale_012.stl",
+    "mesh_sha256": "208ffc1783952b1b9faa98e997d617009592641c724988599d96862847d89f2d",
+    "object_id": "59671a0f6423d18d21abc14cdf54966e2acdaf56bdb1912c49c1ba6555188261_scale_012",
+    "object_uid": "f438153a0d98370c892e29ac780156e7c684eca6991d6c7e694d88251fbd38d4",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.12000000104308128,
+      0.12000000104308128,
+      0.12000000104308128
+    ],
+    "urdf_relative": "object_urdf/59671a0f6423d18d21abc14cdf54966e2acdaf56bdb1912c49c1ba6555188261_scale_012.urdf",
+    "urdf_sha256": "9d93cf4b5b1bb4901f4f5d7c692d921b4b7d4319d098dcfd647f27cb0f2dc0ab"
+  },
+  "f563f29a8e6a2c2c7fbb6ad9927bd31af180141cf07b112bcf3af3cafb525a22": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/6e7e67644ce3d7151b13d62ef87a11c1ce9697ccaeeca78dbf0cd5ae5eb25195_scale_1114.stl",
+    "mesh_sha256": "2487bbe7c9182e275e3c2256f4e3d85f498b7f6f1533fcabbb3e0d79cef1d6eb",
+    "object_id": "6e7e67644ce3d7151b13d62ef87a11c1ce9697ccaeeca78dbf0cd5ae5eb25195_scale_1114",
+    "object_uid": "f563f29a8e6a2c2c7fbb6ad9927bd31af180141cf07b112bcf3af3cafb525a22",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.05077308602631092,
+      0.10386264696717262,
+      0.11999999359250069
+    ],
+    "urdf_relative": "object_urdf/6e7e67644ce3d7151b13d62ef87a11c1ce9697ccaeeca78dbf0cd5ae5eb25195_scale_1114.urdf",
+    "urdf_sha256": "d6c0092706ac8150db046a54f2ce446aa8d80933c714c3b17bd5e918dd617288"
+  },
+  "f5c47e4f08c92c706c4481524101d81fbeab322e3005cb79749c430788f6d688": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/b3b672caf45a48b2203acb9cd5fe1b2e7ca0508b845b0002e0694dbb6772d1d0_scale_104.stl",
+    "mesh_sha256": "b0e41d85a82eba4bb2277a7be43c0ff631fe8279c7673efb018f08120e1b64ab",
+    "object_id": "b3b672caf45a48b2203acb9cd5fe1b2e7ca0508b845b0002e0694dbb6772d1d0_scale_104",
+    "object_uid": "f5c47e4f08c92c706c4481524101d81fbeab322e3005cb79749c430788f6d688",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.04982697404921055,
+      0.06757783517241478,
+      0.0899999737739563
+    ],
+    "urdf_relative": "object_urdf/b3b672caf45a48b2203acb9cd5fe1b2e7ca0508b845b0002e0694dbb6772d1d0_scale_104.urdf",
+    "urdf_sha256": "82f02ef07cbb9c84c9f44e9d5f6afa67fd0f1094f2810318edd0dd572f385400"
+  },
+  "fc70e61b8c5b81365ec3e69ac7c05d02f21e4f83302557c846ee330983ae2623": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/583075711f06385bb05cf2e2b39dbc4e358115859472a5c6c6572acfe3b54626_scale_180.stl",
+    "mesh_sha256": "3505c43d7124cf1a752889a13c10faed9002972fc01f1158af966a04ccc50e90",
+    "object_id": "583075711f06385bb05cf2e2b39dbc4e358115859472a5c6c6572acfe3b54626_scale_180",
+    "object_uid": "fc70e61b8c5b81365ec3e69ac7c05d02f21e4f83302557c846ee330983ae2623",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.09000000357627869,
+      0.07199999690055847,
+      0.07200000062584877
+    ],
+    "urdf_relative": "object_urdf/583075711f06385bb05cf2e2b39dbc4e358115859472a5c6c6572acfe3b54626_scale_180.urdf",
+    "urdf_sha256": "552fcefec4543cb255575cdbcc57c509328ec2416a2dba6e606e32add25533bf"
+  },
+  "fe5634db35c73933de4a48b14ed66f06b5ba3aa2f6f6ecd7444833f7f810be56": {
+    "collider_type": "convex_hull",
+    "density_kg_m3": 200.0,
+    "mesh_relative": "object_urdf/1d6e1aba59a7467880245c1a8071dcb08c7ed3812b0b16503dd8aa097b1a7a09_scale_000.stl",
+    "mesh_sha256": "4220771c80fcd6a450ff7b71366c4424573ed1df218fca5dea867b77694218e6",
+    "object_id": "1d6e1aba59a7467880245c1a8071dcb08c7ed3812b0b16503dd8aa097b1a7a09_scale_000",
+    "object_uid": "fe5634db35c73933de4a48b14ed66f06b5ba3aa2f6f6ecd7444833f7f810be56",
+    "scale_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "size_m": [
+      0.11951940506696701,
+      0.06512415036559105,
+      0.046875
+    ],
+    "urdf_relative": "object_urdf/1d6e1aba59a7467880245c1a8071dcb08c7ed3812b0b16503dd8aa097b1a7a09_scale_000.urdf",
+    "urdf_sha256": "cf5dea3bdd3f0c0c200c318c2d0e016f39af81a8402fe39739c4aac4ae8cb4ca"
+  }
+}

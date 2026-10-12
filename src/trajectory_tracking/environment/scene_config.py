@@ -1,7 +1,7 @@
 """Pinned simulator source and physics configuration for trajectory tracking.
 
 This module is intentionally independent from ``residual_finetune`` and safe to
-import before Isaac Lab starts.  It validates the exact Interprior checkout and
+import before Isaac Lab starts.  It validates bundled byte-identical scene
 assets used by the one-trajectory experiment; episode/reset semantics remain in
 ``env.py``.
 """
@@ -11,7 +11,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from hashlib import sha256
 from pathlib import Path
-import subprocess
+import json
+from ..workspace import SCENE_ASSETS
 from typing import Literal
 import xml.etree.ElementTree as ET
 
@@ -69,21 +70,6 @@ def _sha256_file(path: Path) -> str:
         for block in iter(lambda: stream.read(8 * 1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
-
-
-def _git(root: Path, *arguments: str) -> str:
-    result = subprocess.run(
-        ("git", "-C", str(root), *arguments),
-        check=False,
-        capture_output=True,
-        text=True,
-    )
-    if result.returncode:
-        detail = result.stderr.strip() or result.stdout.strip()
-        raise TrajectorySceneConfigError(
-            f"cannot inspect Interprior checkout at {root}: {detail}"
-        )
-    return result.stdout.strip()
 
 
 def _project_relative_file(root: Path, relative: str) -> Path:
@@ -189,7 +175,7 @@ class TrajectoryIsaacSceneSpec:
 
 TRAJECTORY_ISAAC_SCENE = TrajectoryIsaacSceneSpec(
     version="trajectory_isaac_scene_v2",
-    upstream_root_relative="submodules/Interprior",
+    upstream_root_relative="src/trajectory_tracking/resources/scene",
     expected_revision="32198186b64bcef98d73b5f372c8adf74b3bbaf0",
     robot=SceneAssetSpec(
         "assets/urdf/xarm7_wuji_right_description/xarm7_wuji_right.urdf",
@@ -387,19 +373,16 @@ def resolve_trajectory_scene_source(
     scene_asset_root: str | Path,
     spec: TrajectoryIsaacSceneSpec = TRAJECTORY_ISAAC_SCENE,
 ) -> ResolvedTrajectorySceneSource:
-    """Resolve current gitlinks and byte-identical scene assets."""
+    """Resolve bundled geometry and verify every immutable file; no Git dependency."""
 
-    project = Path(project_root).resolve()
-    upstream = (project / spec.upstream_root_relative).resolve()
-    if not upstream.is_relative_to(project) or not upstream.is_dir():
-        raise TrajectorySceneConfigError("Interprior scene checkout is missing")
-    revision = _git(upstream, "rev-parse", "HEAD")
-    if revision != spec.expected_revision:
-        raise TrajectorySceneConfigError(
-            f"Interprior revision mismatch: expected={spec.expected_revision}, actual={revision}"
-        )
-    if _git(upstream, "status", "--porcelain"):
-        raise TrajectorySceneConfigError("Interprior scene checkout must be clean")
+    upstream = SCENE_ASSETS.resolve()
+    manifest_path = _project_relative_file(upstream, "manifest.json")
+    if _sha256_file(manifest_path) != "03259bec0d84821b9afbc4689a652257b33a9ecdb2b28d8af4bb8c13911bef43":
+        raise TrajectorySceneConfigError("bundled scene manifest changed")
+    for relative, expected in json.loads(manifest_path.read_text())["files"].items():
+        path = _project_relative_file(upstream, relative)
+        if _sha256_file(path) != expected:
+            raise TrajectorySceneConfigError(f"bundled scene asset hash mismatch: {relative}")
 
     resolved_assets: list[Path] = []
     for asset in (spec.robot, spec.table, spec.object_asset):

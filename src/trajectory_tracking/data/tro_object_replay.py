@@ -8,8 +8,9 @@ from pathlib import Path
 
 import numpy as np
 
-from .interprior import InterpriorSelectionEntry, InterpriorTrajectorySource, _git
+from .interprior import InterpriorSelectionEntry, InterpriorTrajectorySource
 from ..environment.scene_config import TRAJECTORY_ISAAC_SCENE, override_trajectory_scene_object
+from ..workspace import SCENE_ASSETS, OBJECT_ASSETS
 
 ASSET_ROOT_ENV = "TRAJTRACKING_OBJECT_ASSET_ROOT"
 
@@ -50,8 +51,14 @@ def cache_path(config, root, entry):
 
 def object_scene(source, spec, asset_root):
     """Use real checksummed geometry; retain the benchmark robot/physics."""
+    import xml.etree.ElementTree as ET
+    urdf = child(asset_root, spec["urdf_relative"])
+    for mesh in ET.parse(urdf).getroot().findall(".//mesh"):
+        path = child(asset_root, (urdf.parent / mesh.attrib["filename"]).relative_to(asset_root))
+        if digest(path) != spec["mesh_sha256"]:
+            raise ValueError("selected object mesh checksum changed")
     return override_trajectory_scene_object(source,
-        object_urdf=child(asset_root, spec["urdf_relative"]), root_env=ASSET_ROOT_ENV,
+        object_urdf=urdf, root_env=ASSET_ROOT_ENV,
         relative_path=spec["urdf_relative"], sha256_digest=spec["urdf_sha256"],
         object_uid=spec["object_uid"], object_id=spec["object_id"],
         missing_inertial_density_kg_m3=spec["density_kg_m3"],
@@ -63,7 +70,7 @@ def resolve_scene_source(config, scene_source, root, environ=None, *, payload=No
     if payload is None:
         raise ValueError("an adapter-verified selection payload is required")
     env = os.environ if environ is None else environ
-    asset_root = Path(env.get(ASSET_ROOT_ENV, ""))
+    asset_root = Path(env.get(ASSET_ROOT_ENV, str(OBJECT_ASSETS)))
     if not asset_root.is_absolute():
         raise ValueError(f"set {ASSET_ROOT_ENV} to the absolute asset root")
     names = sorted(payload["objects"])
@@ -89,7 +96,7 @@ def load_collection(config, *, project_root, device, environ=None, sources=None,
         raise ValueError("adapter-verified sources and episode validator are required")
     sources = tuple(sources)
     rows, kinematics, names = [], None, None
-    urdf = root / "submodules/Interprior" / TRAJECTORY_ISAAC_SCENE.robot.relative_path
+    urdf = SCENE_ASSETS / TRAJECTORY_ISAAC_SCENE.robot.relative_path
     if digest(urdf) != TRAJECTORY_ISAAC_SCENE.robot.sha256:
         raise ValueError("TRO canonical robot changed")
     bounds = {joint.attrib["name"]: (float(joint.find("limit").attrib["lower"]),

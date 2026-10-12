@@ -141,7 +141,7 @@ class TrajectoryTrackingBrowserFrameTest(unittest.TestCase):
     def test_scene_uses_reference_object_and_three_bounded_p4_overlays(self) -> None:
         robot_urdf = (
             ROOT
-            / "submodules/Interprior/assets/urdf/"
+            / "src/trajectory_tracking/resources/scene/assets/urdf/"
             "xarm7_wuji_right_description/xarm7_wuji_right.urdf"
         )
 

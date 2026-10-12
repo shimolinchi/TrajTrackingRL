@@ -1,6 +1,6 @@
 # Validation
 
-Accepted on 2026-10-12. This verifies the extracted baseline's execution and contracts;
+The original v0.1.0 extraction was accepted on 2026-10-12. This verifies the extracted baseline's execution and contracts;
 it does not establish convergence or new benchmark quality.
 
 | Check | Result |
@@ -31,3 +31,21 @@ an independently tested eight-second bound.
 
 Artifacts remain outside Git in ignored logs and temporary directories. GCRL code, branches,
 workspaces and training processes were not changed. The short GPU acceptance jobs have exited.
+
+## Bundled assets (v0.1.1)
+
+Both private submodules have been removed. Robot visual/collision meshes, table, cube,
+the four required Grid files and 113 baseline object URDF/mesh pairs are now package resources.
+Asset bytes and physical parameters are preserved; the upstream MIT notice is retained.
+
+| Check | Result |
+|---|---|
+| Asset integrity/admission checks | 5 passed, including all manifests, URDF mesh closure and rejection of changed geometry |
+| Real Isaac source-state restoration | Two objects at frames 0 and 10; joint/object position errors zero, no replay actions |
+| Training entry preflight | Passed with the bundled roots and a newly frozen recipe/contract |
+| Non-editable wheel | All final source/asset bytes included; 307 asset hashes verified in an extracted installation with no Git checkout |
+| Existing HTML review | All 38 asset URLs match their original hashes after relocation |
+
+The asset payload is approximately 76.5 MiB; the wheel is approximately 31 MiB.
+Neither the source checkout nor the installed wheel needs access to the former private repositories.
+Isaac software, trajectory datasets and checkpoints remain separate inputs.

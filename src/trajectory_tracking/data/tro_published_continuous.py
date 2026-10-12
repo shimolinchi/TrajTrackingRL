@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 
 from . import tro_object_replay as cache
-from .interprior import InterpriorTrajectorySource, _git
+from .interprior import InterpriorTrajectorySource
 from .tro_source_alignment import align_source
 
 ADAPTER_NAME = "tro_published_continuous"
@@ -79,9 +79,7 @@ def selection_entries(config, root):
 
 def resolve_sources(config, root, environ):
     payload = selection_payload(config, root)
-    upstream = config.data.upstream_root(root)
-    if _git(upstream, "rev-parse", "HEAD") != config.data.expected_revision or _git(upstream, "status", "--porcelain"):
-        raise ValueError("pinned source revision/worktree changed")
+    upstream = root  # Source collector revision remains recorded provenance.
     dataset = config.data.dataset_root(environ)
     if cache.digest(dataset / "dataset_metadata.json") != payload["dataset_metadata_sha256"]:
         raise ValueError("continuous dataset metadata changed")

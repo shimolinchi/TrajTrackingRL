@@ -6,7 +6,6 @@ from collections.abc import Mapping
 from dataclasses import dataclass
 import json
 from pathlib import Path
-import subprocess
 from typing import Any
 
 import torch
@@ -21,6 +20,7 @@ from trajectory_tracking.data.reference import (
     ReferenceTrajectoryBank,
 )
 from trajectory_tracking.environment.scene_config import TRAJECTORY_ISAAC_SCENE
+from trajectory_tracking.workspace import SCENE_ASSETS
 from trajectory_tracking.utils.kinematics import (
     WujiHandKinematics,
     finite_difference_linear_velocity,
@@ -90,16 +90,6 @@ class _ShardRuntime:
     episode_table: Any
     frames: Any
     metadata_by_slot: dict[int, Mapping[str, Any]]
-
-
-def _git(root: Path, *args: str) -> str:
-    result = subprocess.run(
-        ("git", "-C", str(root), *args),
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    return result.stdout.strip()
 
 
 def _selection_entries(
@@ -183,17 +173,8 @@ def resolve_interprior_trajectory_sources(
         return resolve_data_adapter(config.data.adapter).resolve_sources(
             config, root, environ
         )
-    upstream = config.data.upstream_root(root)
-    if not upstream.is_dir():
-        raise FileNotFoundError(upstream)
-    actual_revision = _git(upstream, "rev-parse", "HEAD")
-    if actual_revision != config.data.expected_revision:
-        raise TrajectoryConfigError(
-            "Interprior_train revision mismatch: "
-            f"expected={config.data.expected_revision}, actual={actual_revision}"
-        )
-    if _git(upstream, "status", "--porcelain"):
-        raise TrajectoryConfigError("Interprior_train worktree must be clean")
+    # The collector revision is provenance, not a dependency on its repository.
+    upstream = root
     entries = _selection_entries(config, root)
     dataset_root = config.data.dataset_root(environ)
     shard_root = (dataset_root / "derived" / config.data.outcome / "shards").resolve()
@@ -493,11 +474,7 @@ def _materialize_trajectory(
         link7_pose[:, 3:], frequency_hz=config.timing.control_hz
     )
     if kinematics is None:
-        urdf = (
-            project_root
-            / "submodules/Interprior/assets/urdf/xarm7_wuji_right_description/"
-            "xarm7_wuji_right.urdf"
-        )
+        urdf = SCENE_ASSETS / TRAJECTORY_ISAAC_SCENE.robot.relative_path
         if not urdf.is_file():
             raise FileNotFoundError(f"Wuji reference-FK URDF is missing: {urdf}")
         kinematics = WujiHandKinematics.from_urdf(

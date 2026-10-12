@@ -157,7 +157,7 @@ class ManipTransRewardSpec:
             )
             exponential_decays["fingertip_velocity"] = 1.0
         payload: dict[str, object] = {
-            "source": "submodules/ManipTrans DexHandImitator reward math",
+            "source": "ManipTrans DexHandImitator reward mathematics (ported implementation)",
             "source_revision": MANIPTRANS_SOURCE_REVISION,
             "source_profile": self.source_profile,
             "adaptation": adaptation,

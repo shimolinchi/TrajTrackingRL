@@ -10,3 +10,5 @@ Source provenance and frozen settings are documented in docs/baseline.md.
 - Runtime files, datasets, model weights and caches belong in ignored tmp/, logs/ or data/. Never commit them.
 - Evaluation uses genuine simulation state. HTML playback follows simulation timestamps at 1x. Record 60 seconds per evaluation and retain the latest three captures.
 - GPU jobs use explicit UUID bindings and exclusive assigned GPUs. Do not stop other jobs or modify shared dependencies.
+
+- Geometry is bundled in resources/scene/ and resources/objects/. Do not add private Git dependencies; preserve source notices, file hashes and URDF mesh closure when updating assets.
