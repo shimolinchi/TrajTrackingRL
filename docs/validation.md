@@ -40,6 +40,7 @@ Asset bytes and physical parameters are preserved; the upstream MIT notice is re
 
 | Check | Result |
 |---|---|
+| Full server CPU/contract suite | 248 passed; the subsequently added mesh-corruption check passed in the focused suite |
 | Asset integrity/admission checks | 5 passed, including all manifests, URDF mesh closure and rejection of changed geometry |
 | Real Isaac source-state restoration | Two objects at frames 0 and 10; joint/object position errors zero, no replay actions |
 | Training entry preflight | Passed with the bundled roots and a newly frozen recipe/contract |
