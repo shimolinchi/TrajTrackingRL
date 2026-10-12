@@ -62,5 +62,6 @@ To view a saved run after evaluation exits, edit `case_directory` in `scripts/re
 `bash scripts/replay.sh`. Open the printed local URL; GPU/Isaac is not required for this state replay.
 See [deployment](docs/deployment.md) for deterministic inference and action semantics.
 
-Run CPU numerical and contract tests with `python -m pytest`.
+Run CPU numerical and contract tests with `bash scripts/test.sh`.
+The script isolates project checks from unrelated plugins in a shared Isaac installation.
 The current acceptance results and their limits are recorded in [validation](docs/validation.md).
