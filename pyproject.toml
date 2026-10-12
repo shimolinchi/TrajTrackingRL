@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TrajTrackingRL"
+version = "0.1.0"
+description = "Delta joint-target PPO for xArm7 and Wuji trajectory tracking"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = ["torch>=2.7,<2.8", "numpy>=1.26,<2", "PyYAML>=6,<7", "trimesh==4.5.1", "pyarrow>=25,<26", "zarr>=3.0,<3.1"]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.61,<1.62"]
+wandb = ["wandb>=0.28,<0.29"]
+test = ["pytest>=9,<10"]
+
+[project.scripts]
+trajtrackingrl = "trajectory_tracking.cli.launch:main"
+trajtrackingrl-prepare = "trajectory_tracking.cli.prepare:main"
+trajtrackingrl-replay = "trajectory_tracking.visualization.state_replay.failure_html_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+trajectory_tracking = ["resources/*.yaml", "resources/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,171 @@
+# 当前 baseline：已验证的 delta arm + absolute hand；机器路径由 ignored local env 提供。
+perturbation:
+  mode: none
+  pre_roll_policy_steps: 0
+  distribution: uniform
+  active_joint_groups:
+  - arm
+  - hand
+  arm_delta_scale_rad: 0.01
+  hand_delta_scale_rad: 0.03
+  joint_limit_margin_rad: 0.01
+joint_acceleration:
+  enabled: true
+  coefficient: 12.78912377569606
+  arm_scale_rad_s2: 170.0
+  hand_scale_rad_s2: 500.0
+  calibration_required: true
+  calibration_sha256: ca56d7c37f0852638cc9bd5a7842432bae971f51bd7cc15c68c0e87961b55b7a
+reward:
+  combination: maniptrans_wrist_hand_kinematics
+  maximum_reward: 100.0
+  object_flow_diagnostic_half_error_m: 0.03
+  arm_joint_position_half_reward_error_rad: 0.5
+  hand_joint_position_half_reward_error_rad: 0.25
+  robot_tracking_reward_enabled: true
+  maniptrans:
+    source_profile: dexhandimitator_xarm7_wuji_v1
+    tighten_factor: 0.7
+    tighten_simulation_steps: 128000
+    failure_warmup_steps: 20
+    component_weights:
+      wrist_position: 1.7
+      wrist_orientation: 0.75
+      thumb_tip: 0.45
+      index_tip: 0.32
+      middle_tip: 0.32
+      ring_tip: 0.32
+      pinky_tip: 0.32
+      level_1: 0.0
+      level_2: 0.0
+      wrist_linear_velocity: 0.2
+      wrist_angular_velocity: 0.15
+      hand_keypoint_velocity: 0.0
+      fingertip_velocity: 0.2
+      hand_power: 0.635
+      wrist_power: 0.635
+      hand_joint_position: 0.4
+  object_flow_reward_weight: 0.5
+  joint_velocity_penalty_weight: 0.0
+  arm_joint_velocity_penalty_scale_rad_s: 4.0
+  hand_joint_velocity_penalty_scale_rad_s: 4.0
+schema_version: 18
+task_success:
+  episode_mean_flow_error_threshold_m: 0.03
+  mode: object_trajectory
+  final_flow_error_threshold_m: 0.05
+data:
+  trajectory_count: 2402
+  frame_start: 0
+  expected_episode_uid: 520ba7e0554c97cbd4595a457ac3bc6306b3b7a188c8a78b7ca3a65cf38dadbe
+  dataset_root_env: TRAJTRACKING_DATASET_ROOT
+  adapter: tro_success_continuous
+  upstream_root: submodules/Interprior_train
+  expected_revision: 8515739c561e1db4ba6dbd9088091348c76f4281
+  selection_count: 3005
+  selection_index: 0
+  selection_sha256: e809ccceba0ebfac721d5d3da7aab5baa1e84e5800d5293010884d4721e631ad
+  outcome: success
+  selection_root: project
+  frame_coverage_policy: source_valid_frames
+  selection: logs/trajectory_data/obj128_producer_success_continuous_v1/selection_split80_20_seed42.json
+  source_num_points: 1024
+  frame_stop: 1993
+timing:
+  physics_hz: 120
+  control_hz: 60
+  flow_anchor_offsets_steps:
+  - 1
+  - 30
+  - 60
+  - 90
+  - 120
+  settle_physics_steps: 0
+termination:
+  mean_absolute_joint_position_error_threshold_rad: 0.5
+  link7_position_error_threshold_m: 0.15
+  robot_tracking_reset_mode: maniptrans_keypoints
+  link7_weighted_pose_error_threshold_m: null
+  link7_orientation_error_weight_m_per_rad: 0.0
+  link7_pose_failure_warmup_steps: 20
+  object_departure_position_error_threshold_m: 0.12
+  object_departure_failure_warmup_steps: 8
+  object_departure_reset_enabled: true
+learner_lineage:
+  name: rltracking_no_reference_ablation_v1
+  learner_enabled: true
+  task_runtime_enabled: false
+  evaluation_mode: configured_task
+start_index:
+  mode: uniform_valid
+  fixed_index: null
+  minimum: null
+  maximum: null
+  maximum_trajectory_fraction: 0.98
+  trajectory_assignment: random_per_reset
+  pre_lift_reset_probability: 0.6
+  lift_height_threshold_m: 0.02
+run:
+  seed: 42
+  environment_version: trajectory_residual_multiobject_temporal_v1
+action_smoothness:
+  first_difference_weight: 4
+  hand_weight: 0.0
+  arm_weight: 1.0
+  second_difference_weight: 1.5
+  enabled: true
+ppo:
+  rollout_steps_per_env: 32
+  update_epochs: 5
+  num_minibatches: 52
+  actor_learning_rate: 0.0002
+  critic_learning_rate: 0.0002
+  learner_reward_scale: 0.064
+  learner_failure_penalty: 0.0
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_coef: 0.2
+  clip_value_loss: true
+  value_loss_coef: 4.0
+  entropy_coef: 0.0
+  max_grad_norm: 1.0
+  target_kl: 0.008
+  actor_lr_schedule: adaptive_kl
+  actor_learning_rate_min: 1.0e-06
+  actor_learning_rate_max: 0.01
+  actor_learning_rate_adaptation_factor: 1.5
+  actor_lr_clip_fraction_threshold: 1.0
+  arm_initial_std: 0.36787944117144233
+  hand_initial_std: 0.36787944117144233
+  hidden_dims:
+  - 512
+  - 512
+  - 512
+  - 256
+  - 512
+  - 128
+  - 64
+  activation: elu
+direct_action:
+  mode: arm_target_increment
+  arm_target_speed_rad_s: 1.5
+  joint_limit_margin_rad: 0.0
+observation:
+  current_reference_robot_target_features:
+  - arm_joint_position
+  - hand_joint_position
+  include_previous_policy_action: true
+  include_current_link7_pose: true
+  joint_velocity_scale_rad_s: 4.0
+  object_angular_velocity_scale_rad_s: 4.0
+  object_linear_velocity_scale_m_s: 1.0
+  fingertip_count: 5
+  num_object_points: 4
+  object_target_representation: error_reference_delta
+  include_reference_robot_state: false
+  reference_robot_target_representation: none
+  object_point_scale_m: 0.25
+  link7_position_scale_m: 1.0
+  robot_joint_temporal_context: true
+scene:
+  object_physics_mode: dynamic
