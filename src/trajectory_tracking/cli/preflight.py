@@ -12,10 +12,8 @@ import json
 import os
 from pathlib import Path
 
-ROOT = Path(os.environ.get("TRAJTRACKING_WORKSPACE", Path.cwd())).resolve()
-PACKAGE = Path(__file__).resolve().parents[1]
-CONFIG = PACKAGE / "resources/baseline.yaml"
-CONTRACT = PACKAGE / "resources/physics_contract_template.json"
+from ..workspace import ROOT, PACKAGE, CONFIG, CONTRACT, alignment_source_path
+from ..data.preparation.alignment import verify_alignment
 
 
 def gpu_plan(text: str, per_gpu_envs: int = 8192) -> dict:
@@ -29,39 +27,6 @@ def gpu_plan(text: str, per_gpu_envs: int = 8192) -> dict:
                 per_gpu_envs=per_gpu_envs, global_envs=len(indices) * per_gpu_envs)
 
 
-def alignment_source_path(root: Path, relative: str) -> Path:
-    """Resolve only the explicit package relocation; never change signed hashes."""
-    prefix = "src/trajectory_residual/"
-    if relative.startswith(prefix):
-        relative = "src/trajectory_tracking/" + relative[len(prefix):]
-    return PACKAGE / relative.removeprefix("src/trajectory_tracking/")
-
-
-def verify_alignment(root: Path, prepared: Path, report_path: Path, contract: dict) -> dict:
-    from trajectory_tracking.data.tro_object_replay import digest
-    if digest(report_path) != contract["alignment_report_sha256"]:
-        raise ValueError("one-time scene alignment report signature changed")
-    report = json.loads(report_path.read_text())
-    if (report.get("passed") is not True or report.get("producer_success_required") is not contract.get("producer_success_required", True)
-            or report.get("action_replay_performed") is not False
-            or report.get("source_actions_executed") != 0 or not report.get("restore_checks")):
-        raise ValueError("missing genuine scene restoration evidence; replay was not certified")
-    expected = contract["static_alignment_sha256"]
-    if report["static_alignment_sha256"] != expected or digest(prepared / "static_alignment.json") != expected:
-        raise ValueError("static physics/asset alignment changed")
-    for relative, expected in contract["physics_file_sha256"].items():
-        if digest(alignment_source_path(root, relative)) != expected:
-            raise ValueError(f"physics bytes changed; recertify alignment: {relative}")
-    for item in contract["physics_symbols"]:
-        text = alignment_source_path(root, item["path"]).read_text()
-        node = next(n for n in ast.parse(text).body if getattr(n, "name", None) == item["symbol"])
-        if sha256(ast.get_source_segment(text, node).encode()).hexdigest() != item["sha256"]:
-            raise ValueError("physics backend changed; recertify alignment")
-    return dict(report_sha256=contract["alignment_report_sha256"],
-                static_sha256=contract["static_alignment_sha256"],
-                physics_bytes_identical=True, action_replay_performed=False,
-                restore_checks=report["restore_checks"])
-
 
 def verify(*, root=ROOT, config_path=CONFIG, contract_path=None, report_path: Path, scene_asset_root: Path) -> dict:
     import numpy as np
@@ -72,7 +37,9 @@ def verify(*, root=ROOT, config_path=CONFIG, contract_path=None, report_path: Pa
     from trajectory_tracking.data.tro_object_replay import cache_path
     from trajectory_tracking.environment.scene_config import resolve_trajectory_scene_source
     root = Path(root).resolve()
-    path = Path(contract_path) if contract_path is not None else CONTRACT
+    if contract_path is None:
+        raise ValueError("a generated and certified data contract is required")
+    path = Path(contract_path)
     contract = json.loads(path.read_text())
     if contract.get('version') == 2:
         if contract.get('alignment_status') != 'certified':
@@ -119,7 +86,7 @@ def verify(*, root=ROOT, config_path=CONFIG, contract_path=None, report_path: Pa
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, default=CONFIG)
-    parser.add_argument("--contract", type=Path, default=CONTRACT)
+    parser.add_argument("--contract", type=Path)
     parser.add_argument("--gpus", default="0,1,2,3,4,5,6,7")
     parser.add_argument("--per-gpu-envs", type=int, default=8192)
     parser.add_argument("--plan-only", action="store_true", help="CPU arithmetic only; no data admission")
@@ -127,6 +94,8 @@ def main():
     args = parser.parse_args()
     result = gpu_plan(args.gpus, args.per_gpu_envs)
     if not args.plan_only:
+        if args.contract is None:
+            parser.error("verification requires --contract from data preparation")
         result.update(verify(config_path=args.config, contract_path=args.contract,
             report_path=Path(os.environ["TRAJTRACKING_ALIGNMENT_REPORT"]),
             scene_asset_root=Path(os.environ["TRAJTRACKING_SCENE_ASSET_ROOT"])))

@@ -70,7 +70,7 @@ def _transcode_to_mp4(
                 str(source),
                 "-an",
                 *(
-                    ("-vf", f"tpad=stop_mode=clone:stop_duration={duration_s}",
+                    ("-vf", f"setpts=PTS-STARTPTS,fps=30,tpad=stop_mode=clone:stop_duration={duration_s}",
                      "-t", str(duration_s))
                     if duration_s is not None else ()
                 ),

@@ -3,7 +3,7 @@
 python_bin="python"
 recipe="src/trajectory_tracking/resources/baseline.yaml"
 contract="tmp/prepared/contract.json"
-gpu_ids=(0)
+gpu_ids=(0 1 2 3 4 5 6 7)
 envs_per_gpu=8192
 max_updates=20000
 interval=100
@@ -20,6 +20,7 @@ cd "$root"
 mkdir -p tmp
 export TMPDIR="$root/tmp" TMP="$root/tmp" TEMP="$root/tmp"
 export TRAJTRACKING_WORKSPACE="$root"
+export TORCH_DEVICE_BACKEND_AUTOLOAD=0
 if [[ -f configs/local.env ]]; then set -a; source configs/local.env; set +a; fi
 gpu_csv="$(IFS=,; echo "${gpu_ids[*]}")"
 flags=()

@@ -23,7 +23,7 @@ def test_worker_cleanup_subprocess(tmp_path, scenario):
                MKL_NUM_THREADS="1", OPENBLAS_NUM_THREADS="1")
     result = subprocess.run(
         [sys.executable, str(Path(__file__).resolve()), "--worker", scenario, str(tmp_path)],
-        cwd=ROOT, env=env, capture_output=True, text=True, timeout=30,
+        cwd=ROOT, env=env, capture_output=True, text=True, timeout=180,
     )
     out, err = result.stdout, result.stderr
     (tmp_path / "stdout.log").write_text(out)

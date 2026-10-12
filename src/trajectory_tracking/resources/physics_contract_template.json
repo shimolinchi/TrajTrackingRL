@@ -1,32 +1,15 @@
 {
-  "version": 2,
-  "selection_sha256": "e809ccceba0ebfac721d5d3da7aab5baa1e84e5800d5293010884d4721e631ad",
-  "count": 3005,
-  "train_count": 2402,
-  "test_count": 603,
-  "object_count": 113,
-  "train_only_singleton_count": 6,
-  "alignment_report_sha256": "288334648ec9ace3fcb224359224d4518bdff1176416831f0bd5d5079ca6ed6b",
-  "static_alignment_sha256": "c194fd61700d1fff4888674575057d35078cd3128d2afbc626a81a9c65082441",
-  "physics_file_sha256": {
-    "src/trajectory_residual/environment/scene.py": "70efad09969e7bf8f6759814d6d49290e98bfd3e60fc883ddcdc31c249526bc0",
-    "src/trajectory_residual/environment/scene_config.py": "c7c1b36ef4fe5c0e16f4db4f1d79cb82f9f5e14dfe56df5354c88e7134918e59",
-    "src/trajectory_residual/environment/actions.py": "ec187521671e062aa4de5c4cc291dfe31dec6d1210718111e2a159a567ebd2a4",
-    "src/trajectory_residual/data/tro_source_alignment.py": "7b99686c42de315329f9508e97d6cc6a875ba2ebc8480be246f548934a0f86b9",
-    "src/trajectory_residual/utils/kinematics.py": "7019c2ee18f213b50dc555d845f5f4dd586ef429f3ff62e16386a43e007c8ea6"
-  },
+  "physics_files": [
+    "src/trajectory_tracking/environment/scene.py",
+    "src/trajectory_tracking/environment/scene_config.py",
+    "src/trajectory_tracking/environment/actions.py",
+    "src/trajectory_tracking/data/tro_source_alignment.py",
+    "src/trajectory_tracking/utils/kinematics.py"
+  ],
   "physics_symbols": [
     {
-      "path": "src/trajectory_residual/environment/core.py",
-      "symbol": "IsaacTrajectoryBackend",
-      "sha256": "3a9bcc09367b05ad9ee79fe81247bb08e8ba56cf44c88d5b7fab3f0a56bcdb58"
+      "path": "src/trajectory_tracking/environment/core.py",
+      "symbol": "IsaacTrajectoryBackend"
     }
-  ],
-  "action_replay_performed": false,
-  "configuration_hash": "a964a8cca5ac723caec940b841c182a2681b64a8fa81313d7b8d7640a0030b96",
-  "alignment_status": "pending",
-  "producer_success_required": true,
-  "data_range": "producer_success",
-  "alignment_note": "Historical restoration evidence retained. Current source must be recertified before a new launch; do not rewrite signed physics hashes.",
-  "recipe_sha256": "4c54f6517ffaac281ef07868082416902aa4fadaedd63c46ef25406db21ae1a1"
+  ]
 }

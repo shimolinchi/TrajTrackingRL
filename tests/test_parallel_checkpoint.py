@@ -77,3 +77,22 @@ def test_bundle_rejects_world_size_tampering_and_missing_completion(tmp_path):
     (directory / "complete.json").unlink()
     with pytest.raises(FileNotFoundError):
         load_checkpoint(directory, context=context, contract=contract, runner=runner)
+
+
+def test_deployment_uses_saved_weights_and_shared_increment_projector(tmp_path):
+    from trajectory_tracking.deployment import TrackingPolicy
+    runner, context, kwargs, contract = make_runner()
+    runner.run_update()
+    directory = save_checkpoint(tmp_path / "deployment", context=context, contract=contract,
+        runner=runner, update=1, checkpoint_kwargs=kwargs)
+    policy_args = {k: v for k, v in kwargs.items() if k in (
+        "config", "action_spec", "trajectory_id", "scene_manifest", "adapter_version")}
+    policy = TrackingPolicy.load(directory, **policy_args)
+    observation = torch.zeros(4, kwargs["config"].observation.feature_dim)
+    action = runner.trainer.deterministic_action(observation)
+    torch.testing.assert_close(policy.normalized_action(observation), action)
+    previous = torch.zeros_like(action)
+    targets = policy.joint_targets(observation, previous)
+    assert torch.isfinite(targets).all()
+    assert (targets[:, :7].abs() <= 1.5 / 60 + 1e-7).all()
+    assert policy.update == 1

@@ -1576,8 +1576,9 @@ def load_trajectory_direct_config(
 ) -> TrajectoryDirectConfig:
     project = Path(project_root).resolve()
     config_path = Path(path).resolve()
-    if not config_path.is_relative_to(project):
-        raise TrajectoryConfigError("trajectory config must stay inside the project")
+    resources = Path(__file__).resolve().parent / "resources"
+    if not (config_path.is_relative_to(project) or config_path.is_relative_to(resources)):
+        raise TrajectoryConfigError("trajectory config must stay inside the project or package resources")
 
     def deep_merge(base: object, overlay: object) -> object:
         if not isinstance(base, Mapping) or not isinstance(overlay, Mapping):
@@ -1589,8 +1590,8 @@ def load_trajectory_direct_config(
 
     def load_one(current: Path, stack: tuple[Path, ...]) -> object:
         current = current.resolve()
-        if not current.is_relative_to(project):
-            raise TrajectoryConfigError("extends path escapes the project")
+        if not (current.is_relative_to(project) or current.is_relative_to(resources)):
+            raise TrajectoryConfigError("extends path escapes the project or package resources")
         if current in stack:
             chain = " -> ".join(str(item) for item in (*stack, current))
             raise TrajectoryConfigError(f"cyclic trajectory config extends: {chain}")

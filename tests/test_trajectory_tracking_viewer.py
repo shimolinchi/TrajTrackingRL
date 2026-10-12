@@ -153,7 +153,7 @@ class TrajectoryTrackingBrowserFrameTest(unittest.TestCase):
 
         primitives = {actor.actor_id: actor for actor in scene.primitive_actors}
         overlays = {overlay.overlay_id: overlay for overlay in scene.polyline_overlays}
-        self.assertTrue(primitives["reference_object"].wireframe)
+        self.assertFalse(primitives["reference_object"].wireframe)
         self.assertEqual(primitives["reference_object"].label, "当前参考物体")
         self.assertEqual(overlays["reference_object_flow"].color, "#1FD1FF")
         self.assertEqual(overlays["reference_object_flow_elapsed"].color, "#0B78B8")

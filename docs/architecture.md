@@ -4,6 +4,8 @@
 scripts/                     short user entry points
 src/trajectory_tracking/
   resources/                 one baseline and physics-contract template
+  workspace.py               configured workspace and packaged resource locations
+  deployment.py              deterministic inference through the shared action projector
   configuration.py           typed configuration and compatibility identity
   data/                      source labels, immutable frames, identity, splits
     preparation/             raw conversion and cache creation

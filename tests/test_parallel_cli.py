@@ -2,6 +2,7 @@
 
 import json
 import os
+import signal
 from pathlib import Path
 import subprocess
 import sys
@@ -39,7 +40,17 @@ def _run(output, name, updates, resume=None, *, world_size=2):
     if resume is not None:
         command += ["--resume-checkpoint", str(resume)]
     env = dict(os.environ, PYTHONPATH=f"{ROOT / 'src'}:{ROOT}", OMP_NUM_THREADS="1", MKL_NUM_THREADS="1")
-    result = subprocess.run(command, cwd=ROOT, env=env, capture_output=True, text=True, timeout=180)
+    # Cold imports on a shared SDK filesystem can take minutes. This is a
+    # startup budget; worker failure-cleanup deadlines remain independently tested.
+    with subprocess.Popen(command, cwd=ROOT, env=env, stdout=subprocess.PIPE,
+                          stderr=subprocess.PIPE, text=True, start_new_session=True) as child:
+        try:
+            stdout, stderr = child.communicate(timeout=600)
+        except subprocess.TimeoutExpired:
+            os.killpg(child.pid, signal.SIGKILL)
+            child.communicate()
+            raise
+        result = subprocess.CompletedProcess(command, child.returncode, stdout, stderr)
     assert result.returncode == 0, result.stdout + result.stderr
     matches = list(output.glob(f"*_{name}"))
     assert len(matches) == 1  # Not one W&B/artifact directory per rank.
@@ -93,6 +104,7 @@ def test_simulator_process_exit_subprocess_preserves_requested_status(exit_code)
     # Use a real child process: monkeypatching os._exit into an exception misses it.
     code = """
 import os
+import signal
 from types import SimpleNamespace
 from trajectory_tracking.cli.distributed_train import _close_simulator_process
 
@@ -113,7 +125,7 @@ else:
 """.replace("REQUESTED_STATUS", str(exit_code))
     env = dict(os.environ, PYTHONPATH=f"{ROOT / 'src'}:{ROOT}", OMP_NUM_THREADS="1")
     result = subprocess.run([sys.executable, "-c", code], cwd=ROOT, env=env,
-                            capture_output=True, text=True, timeout=30)
+                            capture_output=True, text=True, timeout=180)
     assert result.returncode == exit_code, (result.stdout, result.stderr)
     assert f"distributed worker terminating with code {exit_code}" in result.stdout
     if exit_code:

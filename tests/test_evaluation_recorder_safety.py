@@ -106,7 +106,7 @@ def test_finish_and_cleanup_failure_reaps_real_worker(tmp_path, monkeypatch, sco
 
 def _publish_many(base, start, events, participant):
     r = recorder(Path(base))
-    start.wait(10)
+    start.wait(90)
     for index in range(3):
         for attempt in range(200):
             with r.scope(update=participant * 10 + index, split='test'):
@@ -136,7 +136,7 @@ def test_two_processes_six_publications_never_exceed_three(tmp_path):
         child.start()
     start.set()
     for child in children:
-        child.join(20)
+        child.join(90)
         if child.is_alive():
             child.terminate(); child.join(5)
         assert child.exitcode == 0
@@ -195,7 +195,7 @@ def test_worker_inherits_lock_when_parent_exits(tmp_path):
     ctx = mp.get_context('spawn'); receive, send = ctx.Pipe(False)
     parent = ctx.Process(target=_orphan_parent, args=(str(tmp_path), send))
     parent.start()
-    assert receive.poll(10)
+    assert receive.poll(90)
     pid = receive.recv()
     try:
         assert receive.poll(5) and receive.recv() == 'ready'

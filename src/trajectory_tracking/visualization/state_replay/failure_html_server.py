@@ -79,7 +79,7 @@ def make_handler(data: Path):
     return Handler
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data', type=Path, required=True)
     parser.add_argument('--port', type=int, default=8392)
@@ -87,3 +87,7 @@ if __name__ == '__main__':
     server = ThreadingHTTPServer(('127.0.0.1', args.port), make_handler(args.data))
     print(f'HTML replay ready: http://127.0.0.1:{args.port}{PREFIX}', flush=True)
     server.serve_forever()
+
+
+if __name__ == '__main__':
+    main()

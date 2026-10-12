@@ -204,6 +204,10 @@ _THREE_RENDERER_MODULE = r"""
       }
 
       let pendingUrdfActors = config.urdf_actors.length;
+      const actorProgress = {};
+      const reportActorProgress = () => {
+        status.dataset.actorProgress = JSON.stringify(actorProgress);
+      };
       let sceneAssetFailure = false;
       let readyStatusScheduled = false;
 
@@ -221,11 +225,15 @@ _THREE_RENDERER_MODULE = r"""
         let robot = null;
         let handle = null;
         let finished = false;
+        let pendingMeshes = 0;
+        actorProgress[definition.actor_id] = {parsed: false, meshes: 0, ready: false};
         const finish = () => {
-          if (finished || robot === null || handle === null) return;
+          if (finished || pendingMeshes !== 0 || robot === null || handle === null) return;
           finished = true;
           installColorMaterials(robot, definition);
           handle.ready = true;
+          actorProgress[definition.actor_id].ready = true;
+          reportActorProgress();
           robot.visible = handle.hasState && handle.stateVisible;
           pendingUrdfActors -= 1;
           if (pendingUrdfActors === 0) markSceneAssetsReady();
@@ -242,9 +250,19 @@ _THREE_RENDERER_MODULE = r"""
         };
         loader.packages = '';
         loader.loadMeshCb = (path, loadingManager, onComplete) => {
+          pendingMeshes += 1;
+          actorProgress[definition.actor_id].meshes = pendingMeshes;
+          reportActorProgress();
           const format = meshFormat(path);
           const complete = (object, error = null) => {
             onComplete(object, error);
+            pendingMeshes -= 1;
+            actorProgress[definition.actor_id].meshes = pendingMeshes;
+            reportActorProgress();
+            // FileLoader coalesces identical in-flight URLs across actors;
+            // a secondary manager may never receive its own onLoad event.
+            // Track this actor's mesh completions, independently of that event.
+            queueMicrotask(finish);
           };
           if (format === 'glb' || format === 'gltf') {
             new GLTFLoader(loadingManager).load(
@@ -296,9 +314,9 @@ _THREE_RENDERER_MODULE = r"""
           stateVisible: true
         };
         actors.set(definition.actor_id, handle);
-        if (documentNode.querySelectorAll('visual mesh').length === 0) {
-          queueMicrotask(finish);
-        }
+        actorProgress[definition.actor_id].parsed = true;
+        reportActorProgress();
+        queueMicrotask(finish);
       }
 
       for (const definition of config.urdf_actors) loadUrdfActor(definition);

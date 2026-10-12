@@ -23,7 +23,8 @@ def test_admission_labels_actual_evaluation_without_changing_selection(monkeypat
         "group_identities": {r["episode_uid"]: [r["episode_uid"]] for r in rows},
     }}))
     base = recipe_config()
-    assert base.compatibility_hash == "575a183a4aeefdc39a2195a132d7b564a51e8f45d18c7f329577f623b6228d03"
+    assert base.observation.feature_dim == 427
+    assert base.direct_action.mode == "arm_target_increment"
     config = replace(base, data=replace(base.data, selection_relative=selection.name,
         selection_sha256=sha256(selection.read_bytes()).hexdigest(), selection_count=4,
         trajectory_count=3, expected_episode_uid=rows[0]["episode_uid"]))

@@ -350,12 +350,19 @@ def launch_simulation_app(*, headless: bool, enable_cameras: bool, device: str) 
     """Start Kit before any other simulator module is imported."""
 
     from isaaclab.app import AppLauncher
+    import os
+    import shlex
 
+    kit_args = os.environ.get("ISAACSIM_KIT_ARGS", "")
+    extension_root = os.environ.get("TRAJTRACKING_ISAAC_EXTENSION_ROOT")
+    if extension_root:
+        kit_args += " --ext-folder " + shlex.quote(extension_root)
     return AppLauncher(
         headless=headless,
         enable_cameras=enable_cameras,
         device=device,
         multi_gpu=False,
+        kit_args=kit_args,
     )
 
 

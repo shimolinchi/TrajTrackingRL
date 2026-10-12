@@ -24,7 +24,7 @@ trajtrackingrl-replay = "trajectory_tracking.visualization.state_replay.failure_
 where = ["src"]
 
 [tool.setuptools.package-data]
-trajectory_tracking = ["resources/*.yaml", "resources/*.json"]
+trajectory_tracking = ["resources/*.yaml", "resources/*.json", "visualization/state_replay/*.html", "visualization/state_replay/*.js"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

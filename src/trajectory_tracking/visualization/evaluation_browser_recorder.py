@@ -242,7 +242,7 @@ def record_worker(scratch):
                 "-of", "json", str(scratch / "clip.mp4")], check=True, capture_output=True, text=True, timeout=30)
             info = json.loads(probe.stdout)
             if abs(float(info["format"]["duration"]) - request["duration"]) > .25:
-                raise RuntimeError("encoded clip duration differs from requested real recording")
+                raise RuntimeError(f"encoded clip duration {info['format']['duration']} differs from requested {request['duration']}")
             write_json(scratch / "result.json", dict(ffprobe=info,
                 duration_seconds=request["duration"], renderer="live_Chromium_Threejs_MediaRecorder",
                 recording_started_monotonic=started, recording_ended_monotonic=started + clip.wall_seconds,

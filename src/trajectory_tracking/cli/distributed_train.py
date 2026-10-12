@@ -405,11 +405,11 @@ def main():
         raise ValueError("this launcher supports a single shared-filesystem node")
     # Reject missing/invalid producer evidence before creating a CUDA context.
     config = load_trajectory_direct_config(args.config, project_root=REPOSITORY_ROOT)
+    source_admission = producer_admission(config, REPOSITORY_ROOT,
+        enabled=args.source_label_admission, synthetic=args.synthetic_smoke)
     if not args.synthetic_smoke:
         from .launch import validate_baseline
         validate_baseline(config)
-    source_admission = producer_admission(config, REPOSITORY_ROOT,
-        enabled=args.source_label_admission, synthetic=args.synthetic_smoke)
     _configure_rank_runtime_paths()
     indices = (None if args.cuda_device_indices is None else
                tuple(int(i) for i in args.cuda_device_indices.split(",")))
@@ -629,7 +629,7 @@ def main():
             evaluation_scope=evaluation_scope)
         _run_nominal_gate(args, data.config, coordinator, evaluation_scope, evaluate, test_callback,
                           source_admission)
-        if args.evaluate_checkpoint is not None:
+        if getattr(args, 'evaluate_checkpoint', None) is not None:
             if test_callback is None or args.resume_checkpoint is not None:
                 raise ValueError("evaluation needs held-out data and cannot resume training")
             from ..training.artifacts import load_ppo_policy_checkpoint

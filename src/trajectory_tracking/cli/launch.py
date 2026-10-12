@@ -7,13 +7,14 @@ from pathlib import Path
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
+import yaml
 
 from .preflight import CONFIG, ROOT, verify, gpu_plan
-from ..configuration import load_trajectory_direct_config
+from ..configuration import load_trajectory_direct_config, resolve_trajectory_direct_config
 
 def validate_baseline(config):
     """Permit a new dataset, while fixing the released algorithm."""
-    expected = load_trajectory_direct_config(CONFIG, project_root=ROOT)
+    expected = resolve_trajectory_direct_config(yaml.safe_load(CONFIG.read_text()))
     actual, baseline = asdict(config), asdict(expected)
     actual.pop("data"); baseline.pop("data")
     if actual != baseline or config.data.adapter != "tro_success_continuous":
@@ -21,7 +22,11 @@ def validate_baseline(config):
 
 def exclusive_gpus(indices):
     root = ET.fromstring(subprocess.check_output(["nvidia-smi", "-q", "-x"], text=True, timeout=15))
-    gpus = {int(g.findtext("minor_number")): g for g in root.findall("gpu")}
+    by_uuid = {g.findtext("uuid"): g for g in root.findall("gpu")}
+    rows = subprocess.check_output(["nvidia-smi", "--query-gpu=index,uuid",
+        "--format=csv,noheader"], text=True, timeout=15)
+    gpus = {int(row.split(",")[0]): by_uuid[row.split(",")[1].strip()]
+            for row in rows.splitlines()}
     selected = []
     for index in indices:
         if index not in gpus:

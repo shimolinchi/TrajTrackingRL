@@ -20,6 +20,7 @@ cd "$root"
 mkdir -p tmp
 export TMPDIR="$root/tmp" TMP="$root/tmp" TEMP="$root/tmp"
 export TRAJTRACKING_WORKSPACE="$root"
+export TORCH_DEVICE_BACKEND_AUTOLOAD=0
 if [[ -f configs/local.env ]]; then set -a; source configs/local.env; set +a; fi
 gpu_csv="$(IFS=,; echo "${gpu_ids[*]}")"
 flags=()

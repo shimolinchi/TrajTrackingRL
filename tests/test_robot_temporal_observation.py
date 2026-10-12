@@ -254,8 +254,8 @@ def test_427_config_is_only_temporal_and_complete_current_reference_overlay():
         robot_joint_temporal_context=True,
         current_reference_robot_target_features=("arm_joint_position", "hand_joint_position")))
     assert full.observation.feature_dim == 427
-    assert full.data.trajectory_count == 68775
-    assert full.data.selection_sha256 == "7775975105337ee2166dbb47501b89339b45e3439dbe3375861b34c4cbee63c9"
+    assert full.data.trajectory_count == 2402
+    assert full.data.selection_sha256 == "e809ccceba0ebfac721d5d3da7aab5baa1e84e5800d5293010884d4721e631ad"
 
 
 def test_427_actual_history_complete_current_reference_and_checkpoint_ppo():

@@ -84,7 +84,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     for name in ('dataset', 'asset-root', 'cache-root', 'report'):
         p.add_argument('--' + name, type=Path, required=True)
-    p.add_argument('--data-range', choices=('producer_success', 'success_continuous'), default='producer_success')
+    p.add_argument('--data-range', choices=('producer_success',), default='producer_success')
     p.add_argument('--workers', type=int, default=4)
     p.add_argument('--seed', type=int, default=42)
     p.add_argument('--test-fraction', type=float, default=.2)
@@ -100,6 +100,8 @@ def main():
         seed=a.seed, test_fraction=a.test_fraction, invalid=a.invalid, catalog_asset_root=a.catalog_asset_root,
         alignment_report=a.alignment_report, existing_contract=a.existing_contract)
     if a.certify and not result['certified']:
+        from .launch import exclusive_gpus
+        binding = exclusive_gpus([a.physical_gpu])[0]
         # Only this explicit operation launches a small state-restore check. No policy actions or training.
         text = subprocess.check_output(['nvidia-smi', '--query-gpu=index,memory.free',
             '--format=csv,noheader,nounits'], text=True, timeout=15)
@@ -108,7 +110,9 @@ def main():
             raise ValueError('selected GPU has insufficient free memory; no other process is changed')
         subprocess.run([sys.executable, '-m', 'trajectory_tracking.cli.certify',
             '--dataset', str(a.dataset), '--asset-root', str(a.asset_root), '--prepared', result['cache'],
-            '--output', result['alignment_report'], '--device', f'cuda:{a.physical_gpu}'], check=True)
+            '--output', result['alignment_report'], '--device', 'cuda:0'], check=True,
+            env=dict(os.environ, CUDA_VISIBLE_DEVICES=binding['uuid'], CUDA_DEVICE_ORDER='PCI_BUS_ID',
+                ISAACSIM_KIT_ARGS=f' --/renderer/activeGpu={a.physical_gpu} --/renderer/multiGpu/enabled=false'))
         bind_alignment(Path(result['cache']), Path(result['alignment_report']))
         result.update(certified=True, pending_reason=None)
     if a.certify:

@@ -13,3 +13,9 @@ Reset the history per environment. Preserve joint names/order, limits, coordinat
 Inference without the reference trajectory or with a different robot is not the same policy contract.
 
 Only load trusted project checkpoints. This release does not provide a real-robot driver or claim hardware safety.
+
+`TrackingPolicy.load` is the programmatic deployment API. Supply the training configuration,
+canonical action specification, trajectory identity, scene manifest and adapter version from the
+verified runtime. `normalized_action(observation)` returns the deterministic normalized commands;
+`joint_targets(observation, previous_joint_target)` applies the same integration/projection as training.
+It intentionally rejects incompatible contracts instead of guessing action semantics.

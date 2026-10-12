@@ -253,20 +253,29 @@ def _build_trajectory_tracking_browser_scene(
             allow_external_mesh_symlinks=True,
         ),
     ))
+    reference_actors = ()
+    if object_urdf is not None:
+        from xml.etree import ElementTree
+        links = ElementTree.parse(object_urdf).getroot().findall("link")
+        reference_actors = (BrowserUrdfActor.from_file(
+            "reference_object", object_urdf, joint_names=(),
+            link_colors={link.attrib["name"]: "#3b82f6" for link in links},
+            allow_external_mesh_symlinks=True,
+        ),)
     return BrowserThreeScene(
-        urdf_actors=(*base.urdf_actors, *object_actors),
+        urdf_actors=(*base.urdf_actors, *object_actors, *reference_actors),
         primitive_actors=(
             *(actor for actor in base.primitive_actors if object_urdf is None or actor.actor_id != "object"),
-            BrowserPrimitiveActor.box(
+            *((BrowserPrimitiveActor.box(
                 "reference_object",
                 object_size_m,
-                color=REFERENCE_COLOR,
+                color="#3b82f6",
                 roughness=0.75,
                 metalness=0.0,
-                opacity=0.72,
-                wireframe=True,
+                opacity=1.0,
+                wireframe=False,
                 label="当前参考物体",
-            ),
+            ),) if object_urdf is None else ()),
         ),
         polyline_overlays=flow_overlays,
         overlay_visibility_controls=flow_controls,
