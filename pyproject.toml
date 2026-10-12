@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Delta joint-target PPO for xArm7 and Wuji trajectory tracking"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
-dependencies = ["torch>=2.7,<2.8", "numpy>=1.26,<2", "PyYAML>=6,<7", "trimesh==4.5.1", "pyarrow>=25,<26", "zarr>=3.0,<3.1"]
+dependencies = ["torch>=2.7,<2.8", "numpy>=1.26,<2", "PyYAML>=6,<7", "trimesh==4.5.1", "Pillow>=10,<13", "pyarrow>=25,<26", "zarr>=3.0,<3.1"]
 
 [project.optional-dependencies]
 browser = ["playwright>=1.61,<1.62"]
@@ -28,4 +28,4 @@ trajectory_tracking = ["resources/*.yaml", "resources/*.json", "visualization/st
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-ra"
+addopts = "-ra --basetemp=tmp/pytest"
